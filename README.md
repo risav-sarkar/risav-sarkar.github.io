@@ -18,5 +18,5 @@ This is my personal website which I developed while I was learning basics of HTM
 
 ## Resources Used
 * Icons - https://www.flaticon.com/
-* Image - https://unsplash.com/ 
-* Graphic - https://coolbackgrounds.io/
+* Images - https://unsplash.com/ 
+* Graphics - https://coolbackgrounds.io/
