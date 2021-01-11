@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://risav-sarkar.github.io/">
-    <img src="sample.png" alt="Logo">
+    <img src="Img/sample.png" >
   </a>
 </p>
 
