@@ -1,9 +1,8 @@
-# Personal Website
-https://risav-sarkar.github.io/
+# My Personal Website
 
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://risav-sarkar.github.io/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 </p>
