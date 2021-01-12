@@ -503,26 +503,26 @@ li:not(:last-child) {
 }
 .contact {
   display: flex;
-  flex-direction: column;
+}
+.form{
   padding-top: 6%;
   padding-bottom: 6%;
   padding-left: 5%;
   padding-right: 5%;
-}
-.form {
   text-align: center;
-  padding: 20px 20px 10px 20px;
-  color: #0e0e0e;
-  background-color: hsl(0, 0%, 2%);
-  border: none;
+  max-width: 500px;
   display: flex;
-  border-radius: 20px;
-  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
   margin: 20px auto;
-  overflow: hidden;
+}
+.border {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 20px 10px 20px;
+  background-color: hsl(0, 0%, 2%);
+  color: #ffffff;
 }
 input[type="text"],
 input[type="email"],
@@ -536,12 +536,4 @@ textarea {
   margin-top: 5px;
   margin-bottom: 12px;
   resize: vertical;
-}
-@media (max-width: 640px) {
-  .contact {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
