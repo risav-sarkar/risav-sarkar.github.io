@@ -3,8 +3,9 @@
 <br />
 <p align="center">
   <a href="https://risav-sarkar.github.io/">
-    <img src="Img/Website_thumbnail.jpg" alt="Click to Visit">
+    <img src="Img/Website_thumbnail.jpg">
   </a>
+  Click to Visit
 </p>
 
 ## About The Project
