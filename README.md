@@ -5,7 +5,7 @@
   <a href="https://risav-sarkar.github.io/">
     <img src="Img/Website_thumbnail.jpg">
   </a>
-  Click to Visit
+  Click on the image to visit the Website
 </p>
 
 ## About The Project
