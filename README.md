@@ -9,7 +9,7 @@
 
 ## About The Project
 
-This is my personal website which I developed while I was learning basics of HTML, CSS and JS from "30 Days of Web Development", Developer Student Clubs, India. The website is hosted using Github Pages.
+This is my personal website which I developed after learning basics of HTML, CSS and JS. The website is hosted using Github Pages.
 
 ## Built With
 * HTML
