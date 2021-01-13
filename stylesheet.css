@@ -68,8 +68,6 @@ nav .heroTitle {
   margin-bottom: 0px;
   position: flex;
   background: hsl(0, 0%, 2%);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 .socialLinks {
   text-align: center;
@@ -185,8 +183,6 @@ nav .heroTitle {
   position: -webkit-sticky;
   position: sticky;
   background-color: hsl(0, 0%, 2%);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   top: 0;
   padding: 3vh 0;
   box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.2);
@@ -517,6 +513,7 @@ li:not(:last-child) {
   margin: 20px auto;
 }
 .border {
+  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
   margin-bottom: 10px;
   border: none;
   border-radius: 20px;
