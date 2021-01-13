@@ -528,6 +528,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
+  outline: none;
   font-size: 18px;
   font-weight: 500;
   width: 100%;
