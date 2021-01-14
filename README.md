@@ -18,6 +18,6 @@ This is my personal website which I developed after learning basics of HTML, CSS
 * JS
 
 ## Resources Used
-* Icons - https://www.flaticon.com/
+* Icons - https://thenounproject.com/
 * Images - https://unsplash.com/ 
 * Graphics - https://coolbackgrounds.io/
