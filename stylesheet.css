@@ -212,14 +212,14 @@ nav .heroTitle {
   font-family: Nunito, monospace;
 }
 .heroSection div {
-  max-width: 35ch;
+  max-width: 30ch;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .heroSection div p {
   font-size: 1.3em;
-  padding-top: 10%;
+  margin-top: 10%;
 }
 .heroSection div p .title {
   font-size: 1.55em;
@@ -268,6 +268,8 @@ nav .heroTitle {
     color: rgb(241, 241, 241);
     display: block;
     height: unset;
+    padding-left: 5%;
+    padding-bottom: 10%;
   }
   .heroSection .heroImgContainer {
     width: 70%;
@@ -300,23 +302,15 @@ nav .heroTitle {
   text-align: center;
   list-style-position: inside;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-top: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 li:not(:last-child) {
   margin-bottom: 15px;
-}
-#skillsContainer {
-  padding-bottom: 10%;
-  padding-top: 10%;
-  justify-content: space-evenly;
-  flex-direction: row;
 }
 .List {
   padding: 50px;
@@ -340,7 +334,7 @@ li:not(:last-child) {
 #skillsContainer .SkillsSegment:hover {
   transform: translateY(-2px);
 }
-@media (max-width: 870px) {
+@media (max-width: 660px) {
   #skillsContainer {
     display: block;
     flex-direction: column;
