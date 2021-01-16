@@ -10,7 +10,7 @@
 
 ## About The Project
 
-This is my personal website which I developed after learning basics of HTML, CSS and JS. The website is hosted using Github Pages.
+This is my personal website which I developed after learning basics of HTML, CSS and JS. The website is hosted using GitHub Pages.
 
 ## Built With
 * HTML
