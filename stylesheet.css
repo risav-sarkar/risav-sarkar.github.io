@@ -268,8 +268,10 @@ nav .heroTitle {
     color: rgb(241, 241, 241);
     display: block;
     height: unset;
-    padding-left: 5%;
     padding-bottom: 10%;
+  }
+  .textSection {
+    padding-left: 5%;
   }
   .heroSection .heroImgContainer {
     width: 70%;
@@ -494,7 +496,7 @@ li:not(:last-child) {
 .contact {
   display: flex;
 }
-.form{
+.form {
   padding-top: 6%;
   padding-bottom: 6%;
   padding-left: 5%;
