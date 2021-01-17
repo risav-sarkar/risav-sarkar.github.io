@@ -316,6 +316,7 @@ nav .heroTitle {
   border: none;
   border-radius: 20px;
   background-color: hsl(0, 0%, 0%);
+  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
   color: #ffffff;
   text-align: center;
   margin: 0px auto;
@@ -325,6 +326,7 @@ nav .heroTitle {
   padding: 10px;
   overflow: hidden;
   padding: 40px;
+  transition: transform 0.15s;
 }
 .aboutmesecond {
   text-align: center;
@@ -349,6 +351,7 @@ nav .heroTitle {
   font-size: 2.2em;
 }
 .skillsContainer {
+  text-align: center;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -366,10 +369,18 @@ nav .heroTitle {
   padding: 20px;
   background-color: hsl(0, 0%, 0%);
   color: #ffffff;
+  box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
+  transition: transform 0.15s;
 }
 .aboutmeContentsecond {
   margin: auto 20px;
   flex-direction: column;
+}
+.aboutmefirst:hover {
+  transform: translateY(-4px);
+}
+.SkillsSegment:hover {
+  transform: translateY(-4px);
 }
 @media (max-width: 420px) {
   .aboutmefirst {
@@ -510,7 +521,7 @@ nav .heroTitle {
   height: 12px;
   margin-top: -10px;
   background: rgb(255, 255, 255);
-  border: 4px solid rgb(9, 28, 197);
+  border: 4px solid rgb(10, 69, 230);
   border-radius: 10px;
   z-index: 10;
 }
@@ -576,7 +587,7 @@ nav .heroTitle {
   margin: 1em 0 0 0.75em;
 }
 /* ================ Timeline Media Queries ================ */
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 700px) {
   .timeline {
     width: 100%;
     padding: 4em 0 1em 0;
@@ -609,7 +620,7 @@ nav .heroTitle {
     margin-left: -9px;
     border-radius: 10px;
     background: rgb(255, 255, 255);
-    border: 4px solid rgb(9, 28, 197);
+    border: 4px solid rgb(10, 69, 230);
     z-index: 10;
   }
   .direction-l .flag:after,
