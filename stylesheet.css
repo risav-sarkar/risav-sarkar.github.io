@@ -298,16 +298,27 @@ nav .heroTitle {
   }
 }
 .aboutmeSection {
-  background: linear-gradient(-45deg, #ffbaba, #e77ca5, #23abd5, #23d5ab);
-  background-size: 400% 400%;
+  background: linear-gradient(62deg, #ee7752, #eb6498, #23a6d5, #23d5ab);
   animation: gradient 6s ease infinite;
+  background-size: 400% 400%;
   padding-top: 50px;
   padding-bottom: 50px;
   flex-direction: column;
 }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
