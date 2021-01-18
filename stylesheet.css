@@ -180,8 +180,6 @@ nav .heroTitle {
 }
 .sectionTitleBar {
   z-index: 5;
-  position: -webkit-sticky;
-  position: sticky;
   background-color: hsl(0, 0%, 2%);
   top: 0;
   padding: 3vh 0;
@@ -300,10 +298,23 @@ nav .heroTitle {
   }
 }
 .aboutmeSection {
-  /*background-color: rgb(216, 216, 216);*/
+  background: linear-gradient(-45deg, #ffbaba, #e77ca5, #23abd5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
   padding-top: 50px;
   padding-bottom: 50px;
   flex-direction: column;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .aboutmeContentfirst {
   margin-top: 20px;
@@ -520,8 +531,8 @@ nav .heroTitle {
   width: 12px;
   height: 12px;
   margin-top: -10px;
-  background: rgb(255, 255, 255);
-  border: 4px solid rgb(10, 69, 230);
+  background: rgb(255 255 255);
+  border: 4px solid rgb(199 199 199);
   border-radius: 10px;
   z-index: 10;
 }
@@ -619,8 +630,8 @@ nav .heroTitle {
     height: 12px;
     margin-left: -9px;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
-    border: 4px solid rgb(10, 69, 230);
+    background: rgb(255 255 255);
+    border: 4px solid rgb(199 199 199);
     z-index: 10;
   }
   .direction-l .flag:after,
@@ -661,9 +672,10 @@ nav .heroTitle {
     border-radius: 10px;
     z-index: 15;
   }
-  .time{
+  .time {
     background-color: #000000;
     color: #ffffff;
+    margin-top: 2px;
   }
   .direction-l .desc,
   .direction-r .desc {
