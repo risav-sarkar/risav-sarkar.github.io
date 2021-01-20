@@ -329,9 +329,9 @@ nav .heroTitle {
 .aboutmefirst {
   border: none;
   border-radius: 20px;
-  background-color: hsl(0, 0%, 0%);
+  background-color:rgb(235, 235, 235);
   box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   margin: 0px auto;
   font-size: 1.5em;
@@ -381,13 +381,13 @@ nav .heroTitle {
   border: none;
   border-radius: 20px;
   padding: 20px;
-  background-color: hsl(0, 0%, 0%);
-  color: #ffffff;
+  background-color:rgb(235, 235, 235);;
+  color: #000000;
   box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.281);
   transition: transform 0.15s;
 }
 .aboutmeContentsecond {
-  margin: auto 20px;
+  padding-top: 30px;
   flex-direction: column;
 }
 .aboutmefirst:hover {
@@ -412,8 +412,9 @@ nav .heroTitle {
   width: 660px;
   margin: 0 auto;
   margin-top: 20px;
-  padding: 2em 0;
+  padding: 1em 0;
   list-style-type: none;
+  font-size: 1.5em;
 }
 .timeline:before {
   position: absolute;
@@ -467,10 +468,11 @@ nav .heroTitle {
     rgb(80, 80, 80) 92%,
     rgba(80, 80, 80, 0) 100%
   );
+
   z-index: 5;
 }
 .timeline li {
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 .timeline li:after {
   content: "";
@@ -498,17 +500,15 @@ nav .heroTitle {
 .flag {
   position: relative;
   display: inline;
-  background: rgb(0, 0, 0);
-  color: #ffffff;
+  background: rgb(235, 235, 235);
   padding: 6px 10px;
   border-radius: 5px;
-  font-size: 2em;
+  color: #000000;
   font-weight: 600;
   text-align: left;
-  border-radius: 10px;
 }
 .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(255, 0, 0, 0.15),
+  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
     0 0 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
@@ -529,9 +529,9 @@ nav .heroTitle {
   width: 12px;
   height: 12px;
   margin-top: -10px;
-  background: rgb(255 255 255);
-  border: 4px solid rgb(199 199 199);
+  background: #fff;
   border-radius: 10px;
+  border: 4px solid rgb(0, 0, 0);
   z-index: 10;
 }
 .direction-r .flag:before {
@@ -546,7 +546,7 @@ nav .heroTitle {
   width: 0;
   margin-top: -8px;
   border: solid transparent;
-  border-left-color: rgb(0, 0, 0);
+  border-left-color: rgb(235, 235, 235);
   border-width: 8px;
   pointer-events: none;
 }
@@ -559,7 +559,7 @@ nav .heroTitle {
   width: 0;
   margin-top: -8px;
   border: solid transparent;
-  border-right-color: rgb(0, 0, 0);
+  border-right-color: rgb(235, 235, 235);
   border-width: 8px;
   pointer-events: none;
 }
@@ -578,28 +578,24 @@ nav .heroTitle {
 }
 .time {
   display: inline-block;
-  padding: 6px 6px;
-  font-size: 1.5em;
-  font-weight: 550;
-  border-radius: 5px;
-  color: #000000;
+  padding: 4px 6px;
+  background: rgba(248, 248, 248, 0.774);
+  border-radius: 4px;
 }
 .desc {
   margin: 1em 0.75em 0 0;
-  font-size: 1.2em;
+  font-weight: 550;
+  font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
-  color: #000000;
-  font-weight: 550;
 }
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
-/* ================ Timeline Media Queries ================ */
 @media screen and (max-width: 700px) {
   .timeline {
     width: 100%;
-    padding: 4em 0 1em 0;
+    padding: 2em 0 1em 0;
   }
   .timeline li {
     padding: 2em 0;
@@ -608,13 +604,13 @@ nav .heroTitle {
   .direction-r {
     float: none;
     width: 100%;
+
     text-align: center;
   }
   .flag-wrapper {
     text-align: center;
   }
   .flag {
-    background: rgb(0, 0, 0);
     z-index: 15;
   }
   .direction-l .flag:before,
@@ -627,9 +623,8 @@ nav .heroTitle {
     width: 12px;
     height: 12px;
     margin-left: -9px;
+    background: #fff;
     border-radius: 10px;
-    background: rgb(255 255 255);
-    border: 4px solid rgb(199 199 199);
     z-index: 10;
   }
   .direction-l .flag:after,
@@ -642,7 +637,7 @@ nav .heroTitle {
     width: 0;
     margin-left: -8px;
     border: solid transparent;
-    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(235, 235, 235);
     border-width: 8px;
     pointer-events: none;
   }
@@ -651,6 +646,9 @@ nav .heroTitle {
     position: relative;
     margin: 4px 0 0 0;
     z-index: 14;
+  }
+  .time {
+    background: rgba(248, 248, 248, 0.952);
   }
   .direction-l .time-wrapper {
     float: none;
@@ -662,18 +660,13 @@ nav .heroTitle {
     position: relative;
     margin: 1em 0 0 0;
     padding: 1em;
-    background: rgb(0, 0, 0);
-    color: #ffffff;
+    background:rgb(235, 235, 235);
+    color: #000000;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     z-index: 15;
-  }
-  .time {
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: 2px;
   }
   .direction-l .desc,
   .direction-r .desc {
