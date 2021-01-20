@@ -6,6 +6,7 @@ body {
   background-size: cover;
   color: rgb(232, 232, 232);
   overflow-x: hidden;
+  font-family: Nunito, monospace;
 }
 html {
   scroll-behavior: smooth;
@@ -198,7 +199,6 @@ nav .heroTitle {
   flex-direction: row-reverse;
   padding-top: 12%;
   padding-bottom: 12%;
-  font-family: Nunito, monospace;
 }
 .heroSection div {
   max-width: 30ch;
@@ -335,7 +335,6 @@ nav .heroTitle {
   text-align: center;
   margin: 0px auto;
   font-size: 1.5em;
-  font-weight: 600;
   max-width: 450px;
   padding: 10px;
   overflow: hidden;
@@ -352,6 +351,7 @@ nav .heroTitle {
 }
 .emailview {
   font-size: 1.2rem;
+  font-weight: 550;
   border: none;
   border-radius: 10px;
   padding-left: 5px;
@@ -404,12 +404,7 @@ nav .heroTitle {
     flex-direction: column;
   }
   .emailview {
-    font-size: 0.6em;
-  }
-}
-@media (max-width: 320px) {
-  .aboutmefirst {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }
 .timeline {
