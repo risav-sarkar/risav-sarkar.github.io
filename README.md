@@ -10,7 +10,7 @@
 
 ## About The Project
 
-This is my personal website which I developed after learning basics of HTML, CSS and JS. The website is hosted using GitHub Pages.
+This is my personal website which I developed after learning basics of HTML, CSS and JS. The website is hosted using GitHub Pages. It has a score of 94 at PageSpeed Insights.
 
 ## Built With
 * HTML
