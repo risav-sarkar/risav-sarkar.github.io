@@ -10,6 +10,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 * {
   margin: 0;
@@ -192,13 +193,12 @@ nav .heroTitle {
   background-position: right;
   background-size: 95% 100%;
   background-color: rgb(216, 216, 216);
+  height: 100%;
   color: #0e0e0e;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row-reverse;
-  padding-top: 12%;
-  padding-bottom: 12%;
 }
 .heroSection div {
   max-width: 30ch;
@@ -251,16 +251,13 @@ nav .heroTitle {
 @media (max-width: 640px) {
   .heroSection {
     background-image: url("Img/blue_graphic_v.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
     background-size: 100% 100%;
     color: rgb(241, 241, 241);
-    display: block;
-    height: unset;
-    padding-bottom: 10%;
+    justify-content: space-around;
+    flex-direction: column;
   }
   .textSection {
-    padding-left: 5%;
+    padding: 10%;
   }
   .heroSection .heroImgContainer {
     width: 70%;
