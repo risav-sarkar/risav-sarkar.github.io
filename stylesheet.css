@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover {
 .heroSection {
   background-image: url("Img/blue1.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: static;
   background-size: cover;
   height: 100%;
   color: #ffffff;
@@ -216,6 +216,8 @@ body::-webkit-scrollbar-thumb:hover {
 .heroImgContainer {
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .aboutmeContentfirst {
   flex-direction: column;
