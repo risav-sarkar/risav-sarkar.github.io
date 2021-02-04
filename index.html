@@ -22,7 +22,7 @@
     <section>
       <div class="sectionTitleBar"><h2>About Me</h2></div>
       <div class="aboutmeSection">
-        <div class="aboutmeContentfirst">
+        <div class="intro">
           <div class="heroImgContainer">
             <img id="heroImg" src="Img/Profile.png" alt="Picture" srcset="" />
           </div>
@@ -46,77 +46,94 @@
               />: iamrisavsarkar@gmail.com
             </div>
           </div>
-          <br /><br /><br />
-          <div class="aboutmesecond">
-            <div class="skillsContainer">
-              <div class="SkillsSegment">
-                <h4>Languages</h4>
-                <br />
-                <ul>
-                  <p>Java</p>
-                  <p>Python</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </ul>
+        </div>
+        <main class="skills">
+          <article class="badge java">
+            <div class="rounded">
+              <img
+                src="Img/java.svg"
+                alt=""
+                srcset=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </article>
+          <article class="badge python">
+            <div class="rounded">
+              <img
+                src="Img/python.svg"
+                alt=""
+                srcset=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </article>
+          <article class="badge html">
+            <div class="rounded">
+              <img
+                src="Img/html.svg"
+                alt=""
+                srcset=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </article>
+          <article class="badge css">
+            <div class="rounded">
+              <img
+                src="Img/css.svg"
+                alt=""
+                srcset=""
+                height="100%"
+                width="100%"
+              />
+            </div>
+          </article>
+        </main>
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">BPPIMT</span>
+                <span class="time-wrapper"
+                  ><span class="time">2020-2024</span></span
+                >
               </div>
-              <div class="SkillsSegment">
-                <h4>Frameworks</h4>
-                <br />
-                <ul>
-                  <p>test1</p>
-                  <p>test2</p>
-                  <p>test3</p>
-                  <p>test4</p>
-                </ul>
+              <div class="desc">
+                Done my B.tech in Computer Science Engineering from B.P. Poddar
+                Institute Of Management And Technology.
               </div>
             </div>
-          </div>
-        </div>
-        <div class="aboutmeContentsecond">
-          <section>
-            <ul class="timeline">
-              <!-- Item 1 -->
-              <li>
-                <div class="direction-r">
-                  <div class="flag-wrapper">
-                    <span class="flag">BPPIMT</span>
-                    <span class="time-wrapper"
-                      ><span class="time">2020-2024</span></span
-                    >
-                  </div>
-                  <div class="desc">
-                    Done my B.tech in Computer Science Engineering from B.P.
-                    Poddar Institute Of Management And Technology.
-                  </div>
-                </div>
-              </li>
-              <!-- Item 2 -->
-              <li>
-                <div class="direction-l">
-                  <div class="flag-wrapper">
-                    <span class="flag">Heading 2</span>
-                    <span class="time-wrapper"
-                      ><span class="time">Time-Time</span></span
-                    >
-                  </div>
-                  <div class="desc">Sample 2</div>
-                </div>
-              </li>
-              <!-- Item 3 -->
-              <li>
-                <div class="direction-r">
-                  <div class="flag-wrapper">
-                    <span class="flag">Heading 3</span>
-                    <span class="time-wrapper"
-                      ><span class="time">Time-Time</span></span
-                    >
-                  </div>
-                  <div class="desc">Sample 3</div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </div>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="flag">Heading 2</span>
+                <span class="time-wrapper"
+                  ><span class="time">Time-Time</span></span
+                >
+              </div>
+              <div class="desc">Sample 2</div>
+            </div>
+          </li>
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Heading 3</span>
+                <span class="time-wrapper"
+                  ><span class="time">Time-Time</span></span
+                >
+              </div>
+              <div class="desc">Sample 3</div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -257,12 +274,7 @@
               <label>Message</label>
             </div>
             <div class="contactButton">
-              <button
-                class="heroButton primary-btn"
-                type="submit"
-              >
-                Send
-              </button>
+              <button class="heroButton primary-btn" type="submit">Send</button>
             </div>
           </form>
         </div>
