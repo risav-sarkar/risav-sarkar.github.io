@@ -156,9 +156,9 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
 }
 .heroSection {
-  background-image: url("Img/blue1.jpg");
+  background-image: url("Img/Front1.jpg");
   background-repeat: no-repeat;
-  background-attachment: static;
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   color: #ffffff;
@@ -168,15 +168,14 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 .heroSection div p {
-  font-size: 1.3em;
   padding-top: 10px;
 }
 .title {
-  font-size: 2.5em;
+  font-size: 5em;
   font-weight: 800;
 }
 .heroSection div h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 800;
   font-style: italic;
 }
