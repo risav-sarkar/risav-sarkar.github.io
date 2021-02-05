@@ -694,6 +694,12 @@ body::-webkit-scrollbar-thumb:hover {
   .projectSecondryBtn:hover {
   background: #292929;
 }
+.projectBtn {
+  width: 48%;
+}
+.projectSecondryBtn{
+  width: 48%;
+}
 #projectContainer .mainProjectComponent section .btnContainer .projectBtn img,
 #projectContainer
   .mainProjectComponent
@@ -722,8 +728,10 @@ body::-webkit-scrollbar-thumb:hover {
   .btnContainer
   .projectSecondryBtn {
   color: #101010;
-  margin-left: 15px;
   background-color: #f1f1f1;
+}
+.btnContainer {
+  justify-content: space-around;
 }
 #projectContainer
   .mainProjectComponent
