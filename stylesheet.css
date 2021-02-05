@@ -731,6 +731,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #f1f1f1;
 }
 .btnContainer {
+  text-align: center;
   justify-content: space-around;
 }
 #projectContainer
