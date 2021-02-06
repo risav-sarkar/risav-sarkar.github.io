@@ -286,7 +286,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 1.5em;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .emailview {
     font-size: 0.6em;
   }
