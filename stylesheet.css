@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 .badge {
-  margin: 1.5em 3em;
+  margin: 1.5em 2em;
   width: 110px;
   height: 110px;
   border-radius: 20%;
@@ -328,6 +328,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .css:hover {
   background:rgb(3, 155, 229, 0.8);
+}
+@media (max-width:400px)
+{
+  .badge {
+    margin: 1.5em 1.2em;
+  }
 }
 .timeline {
   position: relative;
@@ -710,7 +716,7 @@ body::-webkit-scrollbar-thumb:hover {
 .container {
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #d6d6d6;
+  background: #333333;
   background-repeat: no-repeat;
   background-attachment: static;
   background-size: cover;
@@ -726,21 +732,23 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
 }
 .styled-input label {
-  color: #999;
-  padding: 1.3rem 0px 1rem 30px;
+  color: rgb(0, 0, 0);
+  padding: 1.2rem 0px 1rem 30px;
   position: absolute;
   top: 10px;
   left: 0;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   pointer-events: none;
+  font-size: 1.1rem;
+  font-weight: 550;
 }
 input:focus ~ label,
 textarea:focus ~ label,
 input:valid ~ label,
 textarea:valid ~ label {
-  font-size: 0.75em;
-  color: #999;
+  font-size: 1em;
+  color: rgb(22, 22, 22);
   top: -5px;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
@@ -750,8 +758,8 @@ textarea {
   padding: 30px;
   border: none;
   font-size: 1.2rem;
-  background-color: #1d1d1d;
-  color: white;
+  background-color: rgba(235, 235, 235, 0.8);
+  color: rgb(0, 0, 0);
   outline: none;
   border-radius: 20px;
   width: 100%;
