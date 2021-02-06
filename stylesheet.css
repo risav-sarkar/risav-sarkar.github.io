@@ -675,82 +675,28 @@ body::-webkit-scrollbar-thumb:hover {
 #projectContainer .mainProjectComponent section .btnContainer {
   margin: 10px 0;
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn,
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn {
+#projectContainer .mainProjectComponent section .btnContainer .projectBtn {
   background: hsl(0, 0%, 0%);
   color: #fafafa;
   cursor: pointer;
   padding: 5px 15px;
   border: 2px solid hsla(0, 0%, 100%, 0.06);
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn:hover,
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn:hover {
+#projectContainer .mainProjectComponent section .btnContainer .projectBtn:hover {
   background: #292929;
 }
 .projectBtn {
   width: 48%;
 }
-.projectSecondryBtn{
-  width: 48%;
-}
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn img,
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn
-  img {
+#projectContainer .mainProjectComponent section .btnContainer .projectBtn img {
   height: 20px;
   width: 20px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn:focus,
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn:focus {
-  outline: none;
-  border: 2px solid #4b4b4b;
-}
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn {
-  color: #ffffff;
-  background-color: #000000;
-}
 .btnContainer {
   text-align: center;
-  justify-content: space-around;
-}
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectSecondryBtn:hover {
-  background: rgb(182, 181, 181);
-}
-@media (max-width: 390px) {
-  #projectContainer
-    .mainProjectComponent
-    section
-    .btnContainer
-    .projectSecondryBtn {
-    margin-left: 0;
-    margin-top: 10px;
-  }
 }
 @media (min-width: 640px) {
   #projectContainer .mainProjectComponent {
