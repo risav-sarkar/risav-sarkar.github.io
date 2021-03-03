@@ -34,7 +34,6 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-  position: flex;
   background: hsl(0, 0%, 2%);
 }
 .socialLinks {
@@ -125,7 +124,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 2%);
   top: 0;
   padding: 3vh 0;
-  position: sticky;
   color:aliceblue;
 }
 .sectionTitleBar h2 {
@@ -712,10 +710,6 @@ body::-webkit-scrollbar-thumb:hover {
 .container {
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #333333;
-  background-repeat: no-repeat;
-  background-attachment: static;
-  background-size: cover;
 }
 .input-container {
   padding: 20px;
