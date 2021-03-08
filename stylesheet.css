@@ -167,7 +167,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: right 400px;
 }
 .aboutmeSection {
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(238, 238, 238);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
   border-radius: 25px;
@@ -276,9 +276,12 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 20%;
   display: inline-block;
   top: 0;
-  box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
   background-color: rgba(235, 235, 235, 0.8);
-  transition: 0.2s;
+  transition: 0.3s;
+}
+.badge:hover {
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
 }
 .rounded {
   width: 84px;
@@ -288,7 +291,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 13px 13px 13px 13px;
   z-index: 10;
   border-radius: 25%;
-  box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
 }
 .java {
   background: rgb(21, 101, 192, 0.8);
@@ -421,16 +424,10 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: left;
 }
 .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
 }
 .direction-r .flag {
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
 }
 .direction-l .flag:before,
 .direction-r .flag:before {
@@ -574,9 +571,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 1em;
     background: rgba(235, 235, 235, 0.959);
     color: #000000;
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
+    box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
     border-radius: 10px;
     z-index: 15;
   }
@@ -604,7 +599,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 10px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url("Img/wave.jpg");
+  background-image: url("Img/black.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -620,11 +615,7 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 900px;
   margin: 20px auto;
   overflow: hidden;
-  transition: transform 0.15s;
   color: #000000;
-}
-#projectContainer .mainProjectComponent:hover {
-  transform: translateY(-2px);
 }
 #projectContainer .mainProjectComponent .projectThumbnaill img {
   width: 100%;
@@ -680,9 +671,12 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   padding: 5px 15px;
   border: 2px solid hsla(0, 0%, 100%, 0.06);
+  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
 }
 #projectContainer .mainProjectComponent section .btnContainer .projectBtn:hover {
-  background: #292929;
+  background: #161616;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
 }
 .projectBtn {
   width: 48%;
