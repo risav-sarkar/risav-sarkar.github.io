@@ -123,12 +123,10 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 5;
   background-color: hsl(0, 0%, 2%);
   top: 0;
-  padding: 3vh 0;
-  color:aliceblue;
-}
-.sectionTitleBar h2 {
+  padding: 3vh;
+  color: aliceblue;
   font-family: monospace;
-  font-size: 2.5rem;
+  font-size: 1.8em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -136,12 +134,10 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-}
-.heroSection div p {
-  padding-top: 10px;
 }
 .title {
   font-size: 5em;
@@ -152,12 +148,32 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 800;
   font-style: italic;
 }
-.heroSection div a button {
-  border: none;
-  font-size: 15px;
-  height: unset;
-  padding: 15px 30px;
-  margin-top: 3%;
+.scroll-down {
+  position: absolute;
+  bottom: 5vh;
+  width: 20px;
+  height: 20px;
+  border-bottom: 4px solid rgb(255 255 255);
+  border-right: 4px solid rgb(255 255 255);
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation: fade_move_down 2s ease-in-out infinite;
+  animation: fade_move_down 2s ease-in-out infinite;
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
 }
 .aboutmebackground {
   padding-bottom: 20px;
@@ -176,45 +192,38 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 20% 0 20%;
   flex-direction: column;
 }
-@media(max-width:1170px)
-{
-  .aboutmeSection{
+@media (max-width: 1170px) {
+  .aboutmeSection {
     margin: 0 10% 0 10%;
   }
 }
-@media(max-width:880px)
-{
-  .aboutmeSection{
+@media (max-width: 880px) {
+  .aboutmeSection {
     margin: 0 9% 0 9%;
   }
 }
-@media(max-width:850px)
-{
-  .aboutmeSection{
+@media (max-width: 850px) {
+  .aboutmeSection {
     margin: 0 6% 0 6%;
   }
 }
-@media(max-width:800px)
-{
-  .aboutmeSection{
+@media (max-width: 800px) {
+  .aboutmeSection {
     margin: 0 4% 0 4%;
   }
 }
-@media(max-width:760px)
-{
-  .aboutmeSection{
+@media (max-width: 760px) {
+  .aboutmeSection {
     margin: 0 20px 0 20px;
   }
 }
-@media(max-width:740px)
-{
-  .aboutmeSection{
+@media (max-width: 740px) {
+  .aboutmeSection {
     margin: 0 10% 0 10%;
   }
 }
-@media(max-width:500px)
-{
-  .aboutmeSection{
+@media (max-width: 500px) {
+  .aboutmeSection {
     margin: 0 20px 0 20px;
   }
 }
@@ -276,12 +285,12 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 20%;
   display: inline-block;
   top: 0;
-  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
   background-color: rgba(235, 235, 235, 0.8);
   transition: 0.3s;
 }
 .badge:hover {
-  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .rounded {
   width: 84px;
@@ -291,34 +300,32 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 13px 13px 13px 13px;
   z-index: 10;
   border-radius: 25%;
-  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 .java {
   background: rgb(21, 101, 192, 0.8);
 }
-.python{
+.python {
   background: rgb(255, 215, 0, 0.8);
 }
-.cprog{
-  background:rgb(57, 73, 171);
+.cprog {
+  background: rgb(57, 73, 171);
 }
-.javascript{
-  background:rgb(255, 214, 0);
+.javascript {
+  background: rgb(255, 214, 0);
 }
 .html {
-  background:rgba(255, 140, 0, 0.8);
+  background: rgba(255, 140, 0, 0.8);
 }
 .css {
-  background:rgb(3, 155, 229, 0.8);
+  background: rgb(3, 155, 229, 0.8);
 }
-@media (max-width:550px)
-{
+@media (max-width: 550px) {
   .badge {
     margin: 1.5em 1.2em;
   }
 }
-@media (max-width:420px)
-{
+@media (max-width: 420px) {
   .badge {
     margin: 1em 0.5em;
   }
@@ -424,10 +431,10 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: left;
 }
 .direction-l .flag {
-  box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
 }
 .direction-r .flag {
-  box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
 }
 .direction-l .flag:before,
 .direction-r .flag:before {
@@ -501,7 +508,7 @@ body::-webkit-scrollbar-thumb:hover {
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
-@media(max-width: 740px) {
+@media (max-width: 740px) {
   .timeline {
     width: 100%;
     padding: 2em 0 1em 0;
@@ -571,28 +578,29 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 1em;
     background: rgba(235, 235, 235, 0.959);
     color: #000000;
-    box-shadow: 4px 8px 15px rgba(0,0,0,0.3);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     z-index: 15;
   }
 }
-@media(max-width: 740px) {
-.direction-l .desc,
+@media (max-width: 740px) {
+  .direction-l .desc,
   .direction-r .desc {
     position: relative;
     margin: 1em 10% 0 10%;
     padding: 1em;
     z-index: 15;
   }
-}@media(max-width: 500px) {
+}
+@media (max-width: 500px) {
   .direction-l .desc,
-    .direction-r .desc {
-      position: relative;
-      margin: 1em 0 0 0;
-      padding: 1em;
-      z-index: 15;
-    }
+  .direction-r .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    z-index: 15;
   }
+}
 #projectContainer {
   display: flex;
   flex-direction: column;
@@ -604,7 +612,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-attachment: fixed;
   background-size: cover;
 }
-#projectContainer .mainProjectComponent {
+.mainProjectComponent {
   background-color: rgb(238, 238, 238);
   box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
   display: flex;
@@ -617,7 +625,7 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
   color: #000000;
 }
-#projectContainer .mainProjectComponent .projectThumbnaill img {
+.projectThumbnaill img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -671,12 +679,16 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   padding: 5px 15px;
   border: 2px solid hsla(0, 0%, 100%, 0.06);
-  box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn:hover {
+#projectContainer
+  .mainProjectComponent
+  section
+  .btnContainer
+  .projectBtn:hover {
   background: #161616;
-  box-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .projectBtn {
   width: 48%;
