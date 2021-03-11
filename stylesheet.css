@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  width: 100%;
   background-image: url("Img/Front1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10,6 +11,7 @@ body {
 html {
   scroll-behavior: smooth;
   height: 100%;
+  width: 100%;
 }
 * {
   margin: 0;
@@ -132,6 +134,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .heroSection {
   height: 100%;
+  width: 100%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -141,16 +144,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .title {
   font-size: 5em;
-  font-weight: 800;
+  font-weight: bold;
 }
 .heroSection div h1 {
-  font-size: 2em;
-  font-weight: 800;
   font-style: italic;
 }
 .scroll-down {
-  position: absolute;
-  bottom: 5vh;
   width: 20px;
   height: 20px;
   border-bottom: 4px solid rgb(255 255 255);
