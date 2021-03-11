@@ -176,6 +176,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .aboutmebackground {
   padding-bottom: 20px;
+  padding-top: 20px;
   background-image: url(Img/white.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
