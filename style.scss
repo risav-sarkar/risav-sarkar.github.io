@@ -122,15 +122,28 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 .sectionTitleBar {
-  z-index: 5;
-  background-color: hsl(0, 0%, 2%);
   top: 0;
-  padding: 3vh;
-  color: aliceblue;
-  font-family: monospace;
-  font-size: 1.8em;
+  padding: 5vh;
+  color: rgb(245, 243, 242);
+  font-size: 2em;
   text-transform: uppercase;
   text-align: center;
+}
+h2 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+h2:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  bottom: 0;
+  left: 25%;
+  border-top: 4px solid rgb(245, 243, 242);
+  border-bottom: 4px solid rgb(245, 243, 242);
+  border-radius: 20px;
 }
 .heroSection {
   height: 100%;
@@ -141,19 +154,20 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 2.5em;
 }
 .title {
-  font-size: 5em;
   font-weight: bold;
 }
 .heroSection div h1 {
   font-style: italic;
+  font-size: 1em;
 }
 .scroll-down {
   width: 20px;
   height: 20px;
-  border-bottom: 4px solid rgb(255, 255, 255);
-  border-right: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(245, 243, 242);
+  border-right: 4px solid rgb(245, 243, 242);
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
@@ -174,81 +188,43 @@ body::-webkit-scrollbar-thumb:hover {
     opacity: 0;
   }
 }
-.aboutmebackground {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-image: url(Img/white.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: right 400px;
-}
 .aboutmeSection {
-  background-color: rgb(238, 238, 238);
-  border-radius: 25px;
-  box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-  padding: 30px 20px 50px 20px;
-  margin: 0 20% 0 20%;
-  flex-direction: column;
+  padding: 0 30px 0 30px;
   overflow: hidden;
+  background-image: url(Img/firewatch1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-@media (max-width: 1170px) {
-  .aboutmeSection {
-    margin: 0 10% 0 10%;
-  }
-}
-@media (max-width: 880px) {
-  .aboutmeSection {
-    margin: 0 9% 0 9%;
-  }
-}
-@media (max-width: 850px) {
-  .aboutmeSection {
-    margin: 0 6% 0 6%;
-  }
-}
-@media (max-width: 800px) {
-  .aboutmeSection {
-    margin: 0 4% 0 4%;
-  }
-}
-@media (max-width: 760px) {
-  .aboutmeSection {
-    margin: 0 20px 0 20px;
-  }
-}
-@media (max-width: 740px) {
-  .aboutmeSection {
-    margin: 0 10% 0 10%;
-  }
-}
-@media (max-width: 500px) {
-  .aboutmeSection {
-    margin: 0 20px 0 20px;
-  }
+.intro {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .heroImgContainer img {
   max-width: 35ch;
   box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-  display: flex;
   border-radius: 50%;
-  width: 100%;
   height: 100%;
-  margin: 0 auto;
+  width: 100%;
 }
 .heroImgContainer {
-  padding-top: 5%;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   padding-left: 5%;
   padding-right: 5%;
 }
 .aboutmefirst {
+  background-color: rgb(245, 243, 242);
+  border-radius: 25px;
+  box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
   color: #000000;
   text-align: center;
   font-size: 1.5em;
   max-width: 380px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
   overflow: hidden;
 }
 .emailview {
@@ -274,7 +250,7 @@ body::-webkit-scrollbar-thumb:hover {
 .skills {
   width: 90%;
   max-width: 900px;
-  margin: 4em auto;
+  margin: 6em auto;
   text-align: center;
 }
 .badge {
@@ -603,8 +579,6 @@ body::-webkit-scrollbar-thumb:hover {
 #projectContainer {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("Img/black.jpg");
   background-repeat: no-repeat;
@@ -612,7 +586,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-size: cover;
 }
 .mainProjectComponent {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(245, 243, 242);
   box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
   display: flex;
   border: none;
@@ -632,28 +606,23 @@ body::-webkit-scrollbar-thumb:hover {
   -o-object-position: center;
   object-position: center;
 }
-#projectContainer .mainProjectComponent section {
+.mainProjectComponent section {
   padding: 15px 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-#projectContainer .mainProjectComponent section .projectDetails .titlebar {
+.titlebar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 0.5em;
 }
-#projectContainer
-  .mainProjectComponent
-  section
-  .projectDetails
-  .titlebar
-  .title {
+.title {
   display: inline-block;
   font-size: 2em;
 }
-#projectContainer .mainProjectComponent section .projectDetails .titlebar .tag {
+.tag {
   display: inline-block;
   font-size: 0.8em;
   border-radius: 30px;
@@ -665,14 +634,14 @@ body::-webkit-scrollbar-thumb:hover {
   color: inherit;
   margin: 10px 0;
 }
-#projectContainer .mainProjectComponent section .projectDetails .description {
+.description {
   margin: 0.6em 0;
   line-height: 1.5;
 }
-#projectContainer .mainProjectComponent section .btnContainer {
+.btnContainer {
   margin: 10px 0;
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn {
+.projectBtn {
   background: hsl(0, 0%, 0%);
   color: #fafafa;
   cursor: pointer;
@@ -681,18 +650,14 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-#projectContainer
-  .mainProjectComponent
-  section
-  .btnContainer
-  .projectBtn:hover {
+.projectBtn:hover {
   background: #161616;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .projectBtn {
   width: 48%;
 }
-#projectContainer .mainProjectComponent section .btnContainer .projectBtn img {
+.projectBtn img {
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -713,11 +678,10 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .input-container {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   margin: 0 auto;
   max-width: 500px;
 }
