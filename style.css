@@ -1,12 +1,12 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  font-family: Nunito, monospace;
   background-image: url("Img/Front1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-x: hidden;
-  font-family: Nunito, monospace;
 }
 
 html {
@@ -80,34 +80,63 @@ body::-webkit-scrollbar-thumb:hover {
   height: 30px;
 }
 
-.button {
-  display: inline-block;
+.projectBtn {
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  width: 48%;
   height: 45px;
-  padding: 5px 30px;
-  background-color: transparent;
-  color: #f8f8f8;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  border-radius: 12px;
-  cursor: pointer;
-  -webkit-transition: all 0.15s;
-  transition: all 0.15s;
-  outline: none;
-  border: 2px solid #252525;
 }
 
-.heroButton {
+.visit-button {
+  background: black;
+  border: 2px solid black;
+  color: #fafafa;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.visit-button:hover {
+  background: #161616;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.git-button {
+  border: 2px solid black;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.git-button:hover {
+  background-color: #cfcecd;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projectBtn img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.primarybtn {
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: #fcfcfc;
   border: 2px solid rgba(255, 255, 255, 0);
   margin-top: 5px;
   border-radius: 10px;
-  color: #dbdbdb;
+  color: #0e0e0e;
   -webkit-box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
           box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
   -webkit-transition: all 0.25s ease-out;
@@ -121,44 +150,18 @@ body::-webkit-scrollbar-thumb:hover {
   outline: none;
 }
 
-.heroButton:focus,
-.heroButton:hover {
+.primarybtn:focus,
+.primarybtn:hover {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
   -webkit-box-shadow: 0 6px 7px 2px rgba(0, 0, 0, 0.281);
           box-shadow: 0 6px 7px 2px rgba(0, 0, 0, 0.281);
-}
-
-.heroButton:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-}
-
-.primary-btn {
-  background-color: #fcfcfc;
-  color: #0e0e0e;
-}
-
-.primary-btn:focus,
-.primary-btn:hover {
   background-color: #b5b5b6;
 }
 
-.primary-btn:active {
+.primarybtn:active {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
-}
-
-.projects-button {
-  text-align: center;
-}
-
-.contactButton {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .sectionTitleBar {
@@ -262,15 +265,15 @@ h2:before {
 }
 
 .aboutmeSection {
-  padding: 0 30px 0 30px;
   overflow: hidden;
-  background-image: url(Img/firewatch1.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .intro {
+  background-image: url(Img/firewatch1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 30px 30px 30px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,7 +303,7 @@ h2:before {
   padding-right: 5%;
 }
 
-.aboutmefirst {
+.aboutme {
   background-color: #f5f3f2;
   border-radius: 25px;
   -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
@@ -326,7 +329,7 @@ h2:before {
 }
 
 @media (max-width: 420px) {
-  .aboutmefirst {
+  .aboutme {
     font-size: 1.5em;
   }
 }
@@ -340,7 +343,7 @@ h2:before {
 .skills {
   width: 90%;
   max-width: 900px;
-  margin: 6em auto;
+  margin: 6em 0;
   text-align: center;
 }
 
@@ -415,7 +418,6 @@ h2:before {
   position: relative;
   width: 660px;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 1em 0;
   list-style-type: none;
   font-size: 1.5em;
@@ -675,11 +677,14 @@ h2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 50px;
   background-image: url("Img/black.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px 60px 30px;
 }
 
 .mainProjectComponent {
@@ -695,9 +700,9 @@ h2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
   max-width: 900px;
-  margin: 20px auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
   overflow: hidden;
   color: #000000;
 }
@@ -765,36 +770,6 @@ h2:before {
   margin: 10px 0;
 }
 
-.projectBtn {
-  background: black;
-  color: #fafafa;
-  cursor: pointer;
-  padding: 5px 15px;
-  border: 2px solid rgba(255, 255, 255, 0.06);
-  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.projectBtn:hover {
-  background: #161616;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.projectBtn {
-  width: 48%;
-}
-
-.projectBtn img {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
 .btnContainer {
   text-align: center;
 }
@@ -814,11 +789,11 @@ h2:before {
 }
 
 .container {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .input-container {
-  padding: 0 20px 20px 20px;
+  padding: 0 30px 30px 30px;
   margin: 0 auto;
   max-width: 500px;
 }
@@ -871,4 +846,9 @@ textarea {
 
 textarea {
   min-height: 10em;
+}
+
+.contactButton {
+  margin: 0 auto;
+  text-align: center;
 }

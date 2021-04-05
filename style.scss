@@ -1,12 +1,12 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  font-family: Nunito, monospace;
   background-image: url("Img/Front1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow-x: hidden;
-  font-family: Nunito, monospace;
 }
 html {
   scroll-behavior: smooth;
@@ -58,32 +58,52 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
   height: 30px;
 }
-.button {
-  display: inline-block;
+.projectBtn {
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  width: 48%;
   height: 45px;
-  padding: 5px 30px;
-  background-color: transparent;
-  color: #f8f8f8;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.15s;
-  outline: none;
-  border: 2px solid #252525;
 }
-.heroButton {
+.visit-button{
+  background: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
+  color: #fafafa;
+  transition: 0.3s;
+}
+.visit-button:hover {
+  background: #161616;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.git-button{
+  border: 2px solid hsl(0, 0%, 0%);
+  color: #000000;
+  transition: 0.3s;
+}
+.git-button:hover {
+  background-color: rgb(207, 206, 205);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.projectBtn img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.primarybtn {
   padding: 10px 20px;
-  background-color: hsla(0, 0%, 100%, 0.075);
+  background-color: #fcfcfc;
   border: 2px solid hsla(0, 0%, 100%, 0);
   margin-top: 5px;
   border-radius: 10px;
-  color: #dbdbdb;
+  color: #0e0e0e;
   box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
   transition: all 0.25s ease-out;
   font-weight: 700;
@@ -94,32 +114,14 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: none;
   outline: none;
 }
-.heroButton:focus,
-.heroButton:hover {
+.primarybtn:focus,
+.primarybtn:hover {
   transform: translateY(2px);
   box-shadow: 0 6px 7px 2px rgba(0, 0, 0, 0.281);
-}
-.heroButton:active {
-  transform: translateY(2px);
-}
-.primary-btn {
-  background-color: #fcfcfc;
-  color: #0e0e0e;
-}
-.primary-btn:focus,
-.primary-btn:hover {
   background-color: rgb(181, 181, 182);
 }
-.primary-btn:active {
+.primarybtn:active {
   transform: translateY(5px);
-}
-.projects-button {
-  text-align: center;
-}
-.contactButton {
-  width: fit-content;
-  margin: 0 auto;
-  text-align: center;
 }
 .sectionTitleBar {
   top: 0;
@@ -189,14 +191,15 @@ h2:before{
   }
 }
 .aboutmeSection {
-  padding: 0 30px 0 30px;
   overflow: hidden;
-  background-image: url(Img/firewatch1.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  
 }
 .intro {
+  background-image: url(Img/firewatch1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  padding: 0 30px 30px 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -215,7 +218,7 @@ h2:before{
   padding-left: 5%;
   padding-right: 5%;
 }
-.aboutmefirst {
+.aboutme {
   background-color: rgb(245, 243, 242);
   border-radius: 25px;
   box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
@@ -238,7 +241,7 @@ h2:before{
   color: #000000;
 }
 @media (max-width: 420px) {
-  .aboutmefirst {
+  .aboutme {
     font-size: 1.5em;
   }
 }
@@ -250,7 +253,7 @@ h2:before{
 .skills {
   width: 90%;
   max-width: 900px;
-  margin: 6em auto;
+  margin: 6em 0;
   text-align: center;
 }
 .badge {
@@ -309,7 +312,6 @@ h2:before{
   position: relative;
   width: 660px;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 1em 0;
   list-style-type: none;
   font-size: 1.5em;
@@ -579,11 +581,12 @@ h2:before{
 #projectContainer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
   background-image: url("Img/black.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  align-items: center;
+  padding: 0 30px 60px 30px;
 }
 .mainProjectComponent {
   background-color: rgb(245, 243, 242);
@@ -592,9 +595,9 @@ h2:before{
   border: none;
   border-radius: 25px;
   flex-direction: column;
-  width: 90%;
   max-width: 900px;
-  margin: 20px auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
   overflow: hidden;
   color: #000000;
 }
@@ -641,29 +644,6 @@ h2:before{
 .btnContainer {
   margin: 10px 0;
 }
-.projectBtn {
-  background: hsl(0, 0%, 0%);
-  color: #fafafa;
-  cursor: pointer;
-  padding: 5px 15px;
-  border: 2px solid hsla(0, 0%, 100%, 0.06);
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
-}
-.projectBtn:hover {
-  background: #161616;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.projectBtn {
-  width: 48%;
-}
-.projectBtn img {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 .btnContainer {
   text-align: center;
 }
@@ -678,10 +658,10 @@ h2:before{
   }
 }
 .container {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .input-container {
-  padding: 0 20px 20px 20px;
+  padding: 0 30px 30px 30px;
   margin: 0 auto;
   max-width: 500px;
 }
@@ -726,4 +706,8 @@ textarea {
 }
 textarea {
   min-height: 10em;
+}
+.contactButton {
+  margin: 0 auto;
+  text-align: center;
 }
