@@ -111,6 +111,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .git-button {
   border: 2px solid black;
+  background: #f5f3f2;
   color: #000000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
