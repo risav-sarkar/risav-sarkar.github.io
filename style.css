@@ -270,11 +270,11 @@ h2:before {
 }
 
 .intro {
-  background-image: url(Img/firewatch1.jpg);
+  background-image: url(Img/firewatch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  padding: 0 30px 30px 30px;
+  background-color: #2d112a;
+  padding: 0 30px 0 30px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,11 +380,11 @@ h2:before {
 }
 
 .java {
-  background: rgba(21, 101, 192, 0.8);
+  background: #1565c0;
 }
 
 .python {
-  background: rgba(255, 215, 0, 0.8);
+  background: #ffd900;
 }
 
 .cprog {
@@ -396,11 +396,11 @@ h2:before {
 }
 
 .html {
-  background: rgba(255, 140, 0, 0.8);
+  background: darkorange;
 }
 
 .css {
-  background: rgba(3, 155, 229, 0.8);
+  background: #039ae5;
 }
 
 @media (max-width: 550px) {
@@ -678,10 +678,11 @@ h2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("Img/black.jpg");
+  background-image: url("Img/Cargo.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -791,6 +792,10 @@ h2:before {
 
 .container {
   padding-bottom: 30px;
+  background-image: url(Img/black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
 }
 
 .input-container {

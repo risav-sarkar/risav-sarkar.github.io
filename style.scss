@@ -196,11 +196,11 @@ h2:before{
   
 }
 .intro {
-  background-image: url(Img/firewatch1.jpg);
+  background-image: url(Img/firewatch.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-  background-attachment: fixed;
-  padding: 0 30px 30px 30px;
+  background-color: rgb(45,17,42);
+  padding: 0 30px 0 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -282,10 +282,10 @@ h2:before{
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 .java {
-  background: rgba(21, 101, 192, 0.8);
+  background: rgb(21, 101, 192);
 }
 .python {
-  background: rgba(255, 215, 0, 0.8);
+  background: rgb(255, 217, 0);
 }
 .cprog {
   background: rgb(57, 73, 171);
@@ -294,10 +294,10 @@ h2:before{
   background: rgb(255, 214, 0);
 }
 .html {
-  background: rgba(255, 140, 0, 0.8);
+  background: rgb(255, 140, 0);
 }
 .css {
-  background: rgba(3, 155, 229, 0.8);
+  background: rgb(3, 154, 229);
 }
 @media (max-width: 550px) {
   .badge {
@@ -582,10 +582,11 @@ h2:before{
 #projectContainer {
   display: flex;
   flex-direction: column;
-  background-image: url("Img/black.jpg");
+  background-image: url("Img/Cargo.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center left;
   align-items: center;
   padding: 0 30px 60px 30px;
 }
@@ -660,6 +661,10 @@ h2:before{
 }
 .container {
   padding-bottom: 30px;
+  background-image: url(Img/black.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top right;
 }
 .input-container {
   padding: 0 30px 30px 30px;
