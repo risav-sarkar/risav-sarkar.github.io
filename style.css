@@ -273,7 +273,7 @@ h2:before {
   background-image: url(Img/firewatch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2d112a;
+  background-position: top center;
   padding: 0 30px 0 30px;
   height: 100%;
   display: -webkit-box;
@@ -335,7 +335,7 @@ h2:before {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 405px) {
   .emailview {
     font-size: 0.6em;
   }
