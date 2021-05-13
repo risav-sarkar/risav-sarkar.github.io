@@ -35,28 +35,56 @@ body::-webkit-scrollbar-thumb:hover {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  margin-bottom: 0px;
+  padding: 30px 20px 30px 20px;
   background: hsl(0, 0%, 2%);
 }
-.socialLinks {
-  text-align: center;
-  display: flex;
-  padding: 3vh 0;
-  margin: auto;
-  max-width: 60vw;
+ul {
+  display:flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.socialLinks a {
-  display: block;
-  transition: transform 0.15s;
+ul li {
+  list-style: none;
 }
-.socialLinks a:hover {
-  transform: translateY(-2px);
+ul li a {
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 5px;
+  border-radius: 15px;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
 }
-.socialLinks a img {
-  display: block;
-  height: 30px;
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+ul li a .fab {
+  width: 100%;
+  height:100%;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 15px;
+  line-height: calc(60px - 12px);
+  font-size:30px;
+  color: #262626;
+  transition: .3s;
+}
+ul li:nth-child(1) a:hover .fab {
+  color: #000000;
+}
+ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+ul li:nth-child(3) a:hover .fab {
+  color: #007bb6;
+}
+ul li:nth-child(4) a:hover .fab {
+  color: #e4405f;
 }
 .projectBtn {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
