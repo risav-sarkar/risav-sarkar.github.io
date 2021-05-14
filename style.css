@@ -18,6 +18,8 @@ html {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * body::-webkit-scrollbar {
@@ -65,7 +67,7 @@ ul li a {
   display: block;
   text-align: center;
   margin: 0 5px;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -79,12 +81,12 @@ ul li a .fab {
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#ddd));
   background: linear-gradient(0deg, #fff, #ddd);
-  border-radius: 15px;
+  border-radius: 20px;
   line-height: calc(60px - 12px);
   font-size: 30px;
   color: #262626;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 ul li:nth-child(1) a:hover .fab {
@@ -160,12 +162,12 @@ ul li:nth-child(4) a:hover .fab {
   border: none;
   -webkit-box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
           box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
-  border-radius: 10px;
+  border-radius: 15px;
   color: #0e0e0e;
   outline: none;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 30px;
 }
 
@@ -281,7 +283,7 @@ h2:before {
   overflow: hidden;
 }
 
-.intro {
+.aboutmeSection .intro {
   background-image: url(Img/firewatch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,7 +302,7 @@ h2:before {
           align-items: center;
 }
 
-.heroImgContainer img {
+.aboutmeSection .heroImgContainer img {
   max-width: 35ch;
   -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
           box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
@@ -309,16 +311,16 @@ h2:before {
   width: 100%;
 }
 
-.heroImgContainer {
+.aboutmeSection .heroImgContainer {
   padding-top: 90px;
   padding-bottom: 90px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.aboutme {
+.aboutmeSection .aboutme {
   background-color: #f5f3f2;
-  border-radius: 25px;
+  border-radius: 20px;
   -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
           box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
   color: #000000;
@@ -330,7 +332,7 @@ h2:before {
   overflow: hidden;
 }
 
-.emailview {
+.aboutmeSection .emailview {
   font-size: 1.2rem;
   font-weight: 550;
   border: none;
@@ -340,29 +342,29 @@ h2:before {
 }
 
 @media (max-width: 420px) {
-  .aboutme {
+  .aboutmeSection .aboutme {
     font-size: 1.5em;
   }
 }
 
 @media (max-width: 405px) {
-  .emailview {
+  .aboutmeSection .emailview {
     font-size: 0.6em;
   }
 }
 
-.skills {
+.aboutmeSection .skills {
   width: 90%;
   max-width: 900px;
   margin: 6em 0;
   text-align: center;
 }
 
-.badge {
+.aboutmeSection .skills .badge {
   margin: 1.5em 2em;
   width: 110px;
   height: 110px;
-  border-radius: 20%;
+  border-radius: 25%;
   display: inline-block;
   top: 0;
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
@@ -372,12 +374,12 @@ h2:before {
   transition: 0.3s;
 }
 
-.badge:hover {
+.aboutmeSection .skills .badge:hover {
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.rounded {
+.aboutmeSection .skills .rounded {
   width: 84px;
   height: 84px;
   background-color: #e0e0e0;
@@ -389,38 +391,38 @@ h2:before {
           box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.java {
+.aboutmeSection .skills .java {
   background: #1565c0;
 }
 
-.python {
+.aboutmeSection .skills .python {
   background: #ffd900;
 }
 
-.cprog {
+.aboutmeSection .skills .cprog {
   background: #3949ab;
 }
 
-.javascript {
+.aboutmeSection .skills .javascript {
   background: #ffd600;
 }
 
-.html {
+.aboutmeSection .skills .html {
   background: darkorange;
 }
 
-.css {
+.aboutmeSection .skills .css {
   background: #039ae5;
 }
 
 @media (max-width: 550px) {
-  .badge {
+  .aboutmeSection .skills .badge {
     margin: 1.5em 1.2em;
   }
 }
 
 @media (max-width: 420px) {
-  .badge {
+  .aboutmeSection .skills .badge {
     margin: 1em 0.5em;
   }
 }
@@ -452,7 +454,7 @@ h2:before {
   display: -ms-flexbox;
   display: flex;
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -545,7 +547,93 @@ h2:before {
   }
 }
 
-.container {
+.timeline-body-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000428), to(#004e92));
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.timeline-body-container .timeline_body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.timeline-body-container .timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: black;
+}
+
+.timeline-body-container .timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 4px;
+  height: 100%;
+  background-color: #f5f3f2;
+}
+
+.timeline-body-container .timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  background-color: #f5f3f2;
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-body {
+  background-color: #f5f3f2;
+  border-radius: 20px;
+  padding: 25px;
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-body:before {
+  content: "";
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-body .timeline-title {
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-body .timeline-title .date {
+  font-size: 0.6em;
+}
+
+.conatct-form-container {
   padding-bottom: 30px;
   background-image: url(Img/black.png);
   background-repeat: no-repeat;
@@ -553,13 +641,13 @@ h2:before {
   background-position: top right;
 }
 
-.input-container {
+.conatct-form-container .input-container {
   padding: 0 30px 30px 30px;
   margin: 0 auto;
   max-width: 500px;
 }
 
-.styled-input {
+.conatct-form-container .styled-input {
   margin: 1rem 0;
   position: relative;
   display: -webkit-box;
@@ -567,7 +655,7 @@ h2:before {
   display: flex;
 }
 
-.styled-input label {
+.conatct-form-container .styled-input label {
   color: black;
   padding: 1.2rem 0px 1rem 30px;
   position: absolute;
@@ -580,10 +668,10 @@ h2:before {
   font-weight: 550;
 }
 
-input:focus ~ label,
-textarea:focus ~ label,
-input:valid ~ label,
-textarea:valid ~ label {
+.conatct-form-container input:focus ~ label,
+.conatct-form-container textarea:focus ~ label,
+.conatct-form-container input:valid ~ label,
+.conatct-form-container textarea:valid ~ label {
   font-size: 1em;
   color: #161616;
   top: -5px;
@@ -591,8 +679,8 @@ textarea:valid ~ label {
   transition: all 0.225s ease;
 }
 
-input,
-textarea {
+.conatct-form-container input,
+.conatct-form-container textarea {
   padding: 30px;
   border: none;
   font-size: 1.2rem;
@@ -605,11 +693,11 @@ textarea {
           box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
 }
 
-textarea {
+.conatct-form-container textarea {
   min-height: 10em;
 }
 
-.contactButton {
+.conatct-form-container .contactButton {
   margin: 0 auto;
   text-align: center;
 }
