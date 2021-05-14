@@ -592,6 +592,8 @@ h2:before {
   text-align: center;
   font-size: 25px;
   background-color: #f5f3f2;
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-body-container .timeline .timeline-container .timeline-icon i {
@@ -624,7 +626,6 @@ h2:before {
 }
 
 .timeline-body-container .timeline .timeline-container .timeline-body .timeline-title {
-  height: 60px;
   margin-bottom: 20px;
   font-size: 2em;
 }

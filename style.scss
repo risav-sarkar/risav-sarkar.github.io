@@ -440,6 +440,7 @@ h2:before {
         text-align: center;
         font-size: 25px;
         background-color: rgb(245, 243, 242);
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
         i {
           position: absolute;
           left: 50%;
@@ -464,7 +465,6 @@ h2:before {
           border-radius: 0 0 0 2px;
         }
         .timeline-title {
-          height: 60px;
           margin-bottom: 20px;
           font-size: 2em;
           .date {
