@@ -3,7 +3,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: Nunito, monospace;
-  background-image: url("Img/Front1.jpg");
+  background-image: url("Img/sample2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -224,7 +224,7 @@ h2:before {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 .title {
@@ -280,16 +280,23 @@ h2:before {
 }
 
 .aboutmeSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
 }
 
 .aboutmeSection .intro {
-  background-image: url(Img/firewatch.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  padding: 0 30px 0 30px;
+  background-color: #e8e8e8;
+  border-radius: 25px;
+  margin: 0 15px 50px 15px;
+  padding: 0 15px 0 15px;
+  max-width: 1200px;
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +310,7 @@ h2:before {
 }
 
 .aboutmeSection .heroImgContainer img {
-  max-width: 35ch;
+  max-width: 30ch;
   -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
           box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
   border-radius: 50%;
@@ -312,23 +319,25 @@ h2:before {
 }
 
 .aboutmeSection .heroImgContainer {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.aboutmeSection .aboutme {
-  background-color: #f5f3f2;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-          box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-  color: #000000;
+.aboutmeSection .quotes1 {
+  font-size: 4em;
+}
+
+.aboutmeSection .quote_left {
+  text-align: right;
+}
+
+.aboutmeSection .aboutme_text {
   text-align: center;
   font-size: 1.5em;
   max-width: 380px;
   margin: 0 auto;
-  padding: 20px 20px 20px 20px;
   overflow: hidden;
 }
 
@@ -342,12 +351,12 @@ h2:before {
 }
 
 @media (max-width: 420px) {
-  .aboutmeSection .aboutme {
+  .aboutmeSection .aboutme_text {
     font-size: 1.5em;
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 350px) {
   .aboutmeSection .emailview {
     font-size: 0.6em;
   }
@@ -435,7 +444,7 @@ h2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("Img/Cargo.png");
+  background-image: url("Img/black.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -548,8 +557,8 @@ h2:before {
 }
 
 .timeline-body-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000428), to(#004e92));
-  background: linear-gradient(to bottom, #000428, #004e92);
+  background: -webkit-gradient(linear, left top, left bottom, from(#020a55), to(#004e92));
+  background: linear-gradient(to bottom, #020a55, #004e92);
 }
 
 .timeline-body-container .timeline_body {
@@ -636,10 +645,10 @@ h2:before {
 
 .conatct-form-container {
   padding-bottom: 30px;
-  background-image: url(Img/black.png);
+  background-image: url(Img/sample3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top right;
+  background-position: center;
 }
 
 .conatct-form-container .input-container {
@@ -702,3 +711,4 @@ h2:before {
   margin: 0 auto;
   text-align: center;
 }
+/*# sourceMappingURL=style.css.map */

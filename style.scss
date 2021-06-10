@@ -3,7 +3,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: Nunito, monospace;
-  background-image: url("Img/Front1.jpg");
+  background-image: url("Img/sample2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -169,78 +169,82 @@ h2:before {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
 }
-  .title {
-    font-weight: bold;
+.title {
+  font-weight: bold;
+}
+.heroSection div h1 {
+  font-style: italic;
+  font-size: 1em;
+}
+.scroll-down {
+  width: 20px;
+  height: 20px;
+  border-bottom: 4px solid rgb(245, 243, 242);
+  border-right: 4px solid rgb(245, 243, 242);
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation: fade_move_down 2s ease-in-out infinite;
+  animation: fade_move_down 2s ease-in-out infinite;
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
   }
-  .heroSection div h1 {
-    font-style: italic;
-    font-size: 1em;
+  50% {
+    opacity: 1;
   }
-  .scroll-down {
-    width: 20px;
-    height: 20px;
-    border-bottom: 4px solid rgb(245, 243, 242);
-    border-right: 4px solid rgb(245, 243, 242);
-    -webkit-transform: translate(-50%, 0%) rotate(45deg);
-    -moz-transform: translate(-50%, 0%) rotate(45deg);
-    transform: translate(-50%, 0%) rotate(45deg);
-    -webkit-animation: fade_move_down 2s ease-in-out infinite;
-    -moz-animation: fade_move_down 2s ease-in-out infinite;
-    animation: fade_move_down 2s ease-in-out infinite;
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
   }
-  @keyframes fade_move_down {
-    0% {
-      transform: translate(0, -20px) rotate(45deg);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: translate(0, 10px) rotate(45deg);
-      opacity: 0;
-    }
-  }
+}
 
 .aboutmeSection {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 
   .intro {
-    background-image: url(Img/firewatch.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    padding: 0 30px 0 30px;
+    background-color: #e8e8e8;
+    border-radius: 25px;
+    margin: 0 15px 50px 15px;
+    padding: 0 15px 0 15px;
+    max-width: 1200px;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .heroImgContainer img {
-    max-width: 35ch;
+    max-width: 30ch;
     box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
     border-radius: 50%;
     height: 100%;
     width: 100%;
   }
   .heroImgContainer {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .aboutme {
-    background-color: rgb(245, 243, 242);
-    border-radius: 20px;
-    box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-    color: #000000;
+  .quotes1 {
+    font-size: 4em;
+  }
+  .quote_left {
+    text-align: right;
+  }
+  .aboutme_text {
     text-align: center;
     font-size: 1.5em;
     max-width: 380px;
     margin: 0 auto;
-    padding: 20px 20px 20px 20px;
     overflow: hidden;
   }
   .emailview {
@@ -252,11 +256,11 @@ h2:before {
     color: #000000;
   }
   @media (max-width: 420px) {
-    .aboutme {
+    .aboutme_text {
       font-size: 1.5em;
     }
   }
-  @media (max-width: 405px) {
+  @media (max-width: 350px) {
     .emailview {
       font-size: 0.6em;
     }
@@ -326,7 +330,7 @@ h2:before {
 #projectContainer {
   display: flex;
   flex-direction: column;
-  background-image: url("Img/Cargo.png");
+  background-image: url("Img/black.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -405,7 +409,7 @@ h2:before {
 }
 
 .timeline-body-container {
-  background: linear-gradient(to bottom, #000428, #004e92);
+  background: linear-gradient(to bottom, #020a55, #004e92);
   .timeline_body {
     max-width: 700px;
     margin: 0 auto;
@@ -478,10 +482,10 @@ h2:before {
 
 .conatct-form-container {
   padding-bottom: 30px;
-  background-image: url(Img/black.png);
+  background-image: url(Img/sample3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top right;
+  background-position: center;
 
   .input-container {
     padding: 0 30px 30px 30px;
