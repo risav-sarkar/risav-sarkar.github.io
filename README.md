@@ -5,7 +5,7 @@ This is my personal website which I developed after learning basics of HTML, CSS
 <br />
 <p align="center">
   <a href="https://risav-sarkar.github.io/" target="_blank">
-    <img src="Img/Website_thumbnail.jpg">
+    <img src="img/Website_thumbnail.jpg">
   </a>
   Click on the image to visit the Website
 </p>
