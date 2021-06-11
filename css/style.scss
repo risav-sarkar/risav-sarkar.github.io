@@ -1,14 +1,14 @@
-$white: rgb(238, 238, 238);
+$white: #ffffff;
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   font-family: Nunito, monospace;
-  background-image: url("Img/sample2.jpg");
+  background-image: url("../img/black.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 html {
   scroll-behavior: smooth;
@@ -170,13 +170,10 @@ h2:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   font-size: 3em;
+  text-align: center;
 }
-.title {
-  font-weight: bold;
-}
-.heroSection div h1 {
+.heroSection p {
   font-style: italic;
   font-size: 1em;
 }
@@ -212,7 +209,7 @@ h2:before {
   overflow: hidden;
 
   .intro {
-    padding: 50px 20px 0 20px;
+    padding: 100px 20px 0 20px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -338,11 +335,6 @@ h2:before {
 #projectContainer {
   display: flex;
   flex-direction: column;
-  background-image: url("Img/black.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center left;
   align-items: center;
   padding: 0 20px 60px 20px;
 }
@@ -417,7 +409,6 @@ h2:before {
 }
 
 .timeline-body-container {
-  background: linear-gradient(to bottom, #020a55, #004e92);
   .timeline_body {
     max-width: 700px;
     margin: 0 auto;
@@ -490,10 +481,6 @@ h2:before {
 
 .conatct-form-container {
   padding-bottom: 30px;
-  background-image: url(Img/sample3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   .input-container {
     padding: 0 20px 30px 20px;
@@ -541,6 +528,7 @@ h2:before {
   }
   textarea {
     min-height: 10em;
+    min-width: 100%;
   }
   .contactButton {
     margin: 0 auto;
