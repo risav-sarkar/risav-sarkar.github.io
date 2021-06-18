@@ -675,7 +675,7 @@ h2:before {
   transition: all 0.25s ease;
   pointer-events: none;
   font-size: 1.1rem;
-  font-weight: 550;
+  font-weight: 560;
 }
 
 .conatct-form-container input:focus ~ label,
