@@ -2,7 +2,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  font-family: Nunito, monospace;
+  font-family: "Nunito", sans-serif;
   background-image: url("../img/black.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
