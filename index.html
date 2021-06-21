@@ -7,7 +7,6 @@
     <title>Risav Sarkar</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stars_intro.css" />
-    <script src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -307,21 +306,21 @@
       <div class="conatct-form-container">
         <div class="sectionTitleBar" id="contactbar"><h2>Contact</h2></div>
         <div class="input-container">
-          <form>
+          <form id="contactForm">
             <div class="styled-input">
-              <input type="text" required />
+              <input type="text" id="name" required />
               <label>Name</label>
             </div>
             <div class="styled-input">
-              <input type="text" required />
+              <input type="text" id="email" required />
               <label>Email</label>
             </div>
             <div class="styled-input">
-              <textarea required></textarea>
+              <textarea required id="message"></textarea>
               <label>Message</label>
             </div>
             <div class="contactButton">
-              <button class="submitbutton" type="submit">
+              <button class="submitbutton" id="submitBtn" type="submit">
                 <i class="fas fa-paper-plane"></i>
               </button>
             </div>
@@ -356,5 +355,9 @@
         </li>
       </ul>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
