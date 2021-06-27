@@ -22,6 +22,15 @@ function submitForm(e) {
   let message = document.getElementById("message").value;
 
   saveForm(name, email, message);
+
+  var loader = document.querySelector(".loader");
+  var check = document.querySelector(".check");
+
+  loader.classList.add("active");
+  loader.addEventListener("animationend", function () {
+    check.classList.add("active");
+  });
+
   document.getElementById("contactForm").reset();
 }
 

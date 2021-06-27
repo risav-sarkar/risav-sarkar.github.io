@@ -156,30 +156,6 @@ ul li:nth-child(4) a:hover .fab {
   margin-right: 10px;
 }
 
-.submitbutton {
-  height: 60px;
-  width: 60px;
-  background-color: #fcfcfc;
-  border: none;
-  -webkit-box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
-          box-shadow: 0 6px 7px 5px rgba(0, 0, 0, 0.281);
-  border-radius: 15px;
-  color: #0e0e0e;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-size: 30px;
-}
-
-.submitbutton:hover {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  -webkit-box-shadow: 0 6px 7px 2px rgba(0, 0, 0, 0.281);
-          box-shadow: 0 6px 7px 2px rgba(0, 0, 0, 0.281);
-  background-color: #b5b5b6;
-}
-
 .sectionTitleBar {
   top: 0;
   padding: 5vh;
@@ -647,10 +623,6 @@ h2:before {
   font-size: 0.6em;
 }
 
-.conatct-form-container {
-  padding-bottom: 30px;
-}
-
 .conatct-form-container .input-container {
   padding: 0 20px 30px 20px;
   margin: 0 auto;
@@ -711,4 +683,143 @@ h2:before {
 .conatct-form-container .contactButton {
   margin: 0 auto;
   text-align: center;
+}
+
+.btncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.submitbutton {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.submitbutton:hover {
+  background-color: #cfcecd;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  margin: 30px auto 0 auto;
+  border: solid 2px #424242;
+  border-top: solid 2px #1c89ff;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.check {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate3d(-4px, 50px, 0);
+          transform: translate3d(-4px, 50px, 0);
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+}
+
+.loader.active {
+  -webkit-animation: loading 2s ease-in-out;
+          animation: loading 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.check.active {
+  opacity: 1;
+  -webkit-transform: translate3d(1px, 0, 0);
+          transform: translate3d(1px, 0, 0);
+  -webkit-transition: all 0.5s cubic-bezier(0.49, 1.74, 0.38, 1.74);
+  transition: all 0.5s cubic-bezier(0.49, 1.74, 0.38, 1.74);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+@-webkit-keyframes loading {
+  30% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-color: #262626;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-color: #1c89ff;
+  }
+}
+
+@keyframes loading {
+  30% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-color: #262626;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+    border-color: #1c89ff;
+  }
 }
