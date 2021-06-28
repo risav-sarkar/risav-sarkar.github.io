@@ -38,7 +38,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #cfcfcf;
-  border-radius: 20px;
+  border-radius: 25px;
   border: 3px solid #050505;
 }
 
@@ -185,7 +185,7 @@ h2:before {
   left: 25%;
   border-top: 4px solid #f5f3f2;
   border-bottom: 4px solid #f5f3f2;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .heroSection {
@@ -368,7 +368,7 @@ h2:before {
   margin: 1.5em 2em;
   width: 110px;
   height: 110px;
-  border-radius: 25%;
+  border-radius: 25px;
   display: inline-block;
   top: 0;
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
@@ -390,7 +390,7 @@ h2:before {
   position: absolute;
   margin: 13px 13px 13px 13px;
   z-index: 10;
-  border-radius: 25%;
+  border-radius: 25px;
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -417,6 +417,10 @@ h2:before {
 
 .aboutmeSection .skills .css {
   background: #039ae5;
+}
+
+.aboutmeSection .skills .react {
+  background: #5ed3f3;
 }
 
 @media (max-width: 550px) {
@@ -456,47 +460,49 @@ h2:before {
   margin: 0 auto;
   position: relative;
   height: 100%;
-  border-radius: calc(var(--curve) * 1px);
+  border-radius: 25px;
   overflow: hidden;
   text-decoration: none;
   max-width: 400px;
 }
 
-.card__image {
+.cardImage {
   width: 100%;
   height: 350px;
 }
 
-.card__overlay {
+.cardOverlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: calc(var(--curve) * 1px);
-  background-color: var(--surface-color);
+  border-radius: 25px;
+  background-color: #ffffff;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.card:hover .card__overlay {
+.card:hover .cardOverlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.card__header {
-  position: relative;
+.cardHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  border-radius: 25px;
   background-color: var(--surface-color);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -504,35 +510,22 @@ h2:before {
   transition: 0.2s ease-in-out;
 }
 
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: var(--surface-color);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}
-
-.card:hover .card__header {
+.card:hover .cardHeader {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.card__title {
-  font-size: 1.5em;
+.cardTitle {
+  font-size: 1.8em;
   color: #000000;
+  max-width: 150px;
 }
 
-.card__subhead {
-  margin-top: 2px;
+.cardSubhead {
+  padding: 6px 7px 6px 7px;
   text-align: center;
-  border-radius: 20px;
-  border: solid 1.5px #000000;
+  border-radius: 25px;
+  border: solid 2px #000000;
   font-size: 1em;
   color: #000000;
 }
@@ -600,7 +593,7 @@ h2:before {
 
 .timeline-body-container .timeline .timeline-container .timeline-body {
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 25px;
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
@@ -674,7 +667,7 @@ h2:before {
   background-color: #ffffff;
   color: black;
   outline: none;
-  border-radius: 20px;
+  border-radius: 25px;
   width: 100%;
   -webkit-box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
           box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
@@ -711,7 +704,7 @@ h2:before {
   display: block;
   width: 120px;
   height: 36px;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #ffffff;
   border: none;
   outline: none;
