@@ -477,7 +477,8 @@ h2:before {
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   background-color: #ffffff;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -488,6 +489,8 @@ h2:before {
 .card:hover .cardOverlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .cardHeader {
@@ -502,7 +505,8 @@ h2:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
-  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   background-color: var(--surface-color);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);

@@ -355,13 +355,16 @@ h2:before {
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   background-color: $white;
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
 }
 .card:hover .cardOverlay {
   transform: translateY(0);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 .cardHeader {
   display: flex;
@@ -369,7 +372,8 @@ h2:before {
   align-items: center;
   justify-content: space-between;
   padding: 2em;
-  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   background-color: var(--surface-color);
   transform: translateY(-100%);
   transition: 0.2s ease-in-out;
