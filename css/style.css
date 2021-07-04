@@ -1,8 +1,3 @@
-:root {
-  --surface-color: #fff;
-  --curve: 40;
-}
-
 body {
   height: 100%;
   width: 100%;
@@ -164,8 +159,9 @@ ul li:nth-child(4) a:hover .fab {
 .sectionTitleBar {
   top: 0;
   padding: 5vh;
+  font-weight: 700;
   color: #f5f3f2;
-  font-size: 2em;
+  font-size: 2.2em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -328,15 +324,17 @@ h2:before {
 
 .aboutmeSection .quotes1 {
   font-size: 4em;
+  font-weight: 600;
 }
 
 .aboutmeSection .quote_left {
   text-align: right;
+  font-weight: 600;
 }
 
 .aboutmeSection .aboutme_text {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
   max-width: 380px;
   margin: 0 auto;
   overflow: hidden;
@@ -344,7 +342,7 @@ h2:before {
 
 .aboutmeSection .emailview {
   font-size: 1.2rem;
-  font-weight: 550;
+  font-weight: 700;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -360,7 +358,7 @@ h2:before {
 .aboutmeSection .skills {
   width: 90%;
   max-width: 900px;
-  margin: 6em 0;
+  margin: 5em 0;
   text-align: center;
 }
 
@@ -505,9 +503,10 @@ h2:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
+  font-weight: 600;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: 0.2s ease-in-out;
@@ -619,10 +618,15 @@ h2:before {
 .timeline-body-container .timeline .timeline-container .timeline-body .timeline-title {
   margin-bottom: 20px;
   font-size: 2em;
+  font-weight: 600;
 }
 
 .timeline-body-container .timeline .timeline-container .timeline-body .timeline-title .date {
   font-size: 0.6em;
+}
+
+.timeline-body-container .timeline .timeline-container .timeline-body .timeline-text {
+  font-size: 1.2em;
 }
 
 .conatct-form-container .input-container {
@@ -649,7 +653,7 @@ h2:before {
   transition: all 0.25s ease;
   pointer-events: none;
   font-size: 1.1rem;
-  font-weight: 560;
+  font-weight: 600;
 }
 
 .conatct-form-container input:focus ~ label,
@@ -714,7 +718,7 @@ h2:before {
   outline: none;
   color: black;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);

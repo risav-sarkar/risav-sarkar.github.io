@@ -17,14 +17,14 @@ document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
   saveForm(name, email, message);
 
-  var loader = document.querySelector(".loader");
-  var check = document.querySelector(".check");
+  let loader = document.querySelector(".loader");
+  let check = document.querySelector(".check");
 
   loader.classList.add("active");
   loader.addEventListener("animationend", function () {
