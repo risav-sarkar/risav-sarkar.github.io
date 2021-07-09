@@ -4,11 +4,6 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: "Nunito", sans-serif;
-  background-image: url("../img/black.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 }
 html {
   scroll-behavior: smooth;
@@ -34,52 +29,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 60%);
 }
-.footerSocialLink {
-  padding: 30px 20px 30px 20px;
-  background: hsl(0, 0%, 2%);
-}
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-ul li {
-  list-style: none;
-}
-ul li a {
-  width: 60px;
-  height: 60px;
-  display: block;
-  text-align: center;
-  margin: 0 5px;
-  border-radius: 20px;
-  padding: 6px;
-  box-sizing: border-box;
-  text-decoration: none;
-  background: linear-gradient(0deg, #ddd, #fff);
-}
-ul li a .fab {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #fff, #ddd);
-  border-radius: 20px;
-  line-height: calc(60px - 12px);
-  font-size: 30px;
-  color: #262626;
-  transition: 0.3s;
-}
-ul li:nth-child(1) a:hover .fab {
-  color: #000000;
-}
-ul li:nth-child(2) a:hover .fab {
-  color: #00aced;
-}
-ul li:nth-child(3) a:hover .fab {
-  color: #007bb6;
-}
-ul li:nth-child(4) a:hover .fab {
-  color: #e4405f;
-}
+
 .projectBtn {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
@@ -144,7 +94,13 @@ h2:before {
   border-bottom: 4px solid rgb(245, 243, 242);
   border-radius: 25px;
 }
-
+.dark-titlebar {
+  color: #000000;
+  h2:before {
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+  }
+}
 .heroSection {
   height: 100%;
   width: 100%;
@@ -187,10 +143,13 @@ h2:before {
 }
 
 .aboutmeSection {
+  background-image: url("../img/black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
   display: flex;
   justify-content: center;
   overflow: hidden;
-
   .intro {
     padding: 100px 20px 0 20px;
     height: 100%;
@@ -211,6 +170,7 @@ h2:before {
     border-radius: 25px;
     padding: 15px;
     max-width: 1000px;
+    box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
   }
   @media (max-width: 800px) {
     .introsection {
@@ -269,7 +229,7 @@ h2:before {
       border-radius: 25px;
       display: inline-block;
       top: 0;
-      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
       background-color: rgba(235, 235, 235, 0.8);
       transition: 0.3s;
     }
@@ -320,11 +280,12 @@ h2:before {
   }
 }
 .projectContainer {
-  padding: 0 100px 0 100px;
+  padding: 50px 100px;
+  background-color: rgb(200, 200, 200);
 }
 @media (max-width: 1000px) {
   .projectContainer {
-    padding: 0 20px 0 20px;
+    padding: 40px 20px;
   }
 }
 .cards {
@@ -343,6 +304,7 @@ h2:before {
   overflow: hidden;
   text-decoration: none;
   max-width: 400px;
+  box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
 }
 .cardImage {
   width: 100%;
@@ -402,9 +364,11 @@ h2:before {
 }
 
 .timeline-body-container {
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  padding-bottom: 10px;
   .timeline_body {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 3rem auto;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -436,7 +400,7 @@ h2:before {
         text-align: center;
         font-size: 25px;
         background-color: $white;
-        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
         i {
           position: absolute;
           left: 50%;
@@ -448,7 +412,7 @@ h2:before {
         background-color: $white;
         border-radius: 25px;
         padding: 25px;
-        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
         &:before {
           content: "";
           background: inherit;
@@ -477,59 +441,89 @@ h2:before {
 }
 
 .conatct-form-container {
-  .input-container {
-    padding: 0 20px 30px 20px;
-    margin: 0 auto;
-    max-width: 500px;
-  }
-  .styled-input {
-    margin: 1rem 0;
-    position: relative;
-    display: flex;
-  }
-  .styled-input label {
-    color: rgb(0, 0, 0);
-    padding: 1.2rem 0px 1rem 30px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  input:focus ~ label,
-  textarea:focus ~ label,
-  input:valid ~ label,
-  textarea:valid ~ label {
-    font-size: 1em;
-    color: rgb(22, 22, 22);
-    top: -5px;
-    -webkit-transition: all 0.225s ease;
-    transition: all 0.225s ease;
-  }
-  input,
-  textarea {
-    padding: 30px;
-    border: none;
-    font-size: 1.2rem;
-    background-color: $white;
-    color: rgb(0, 0, 0);
-    outline: none;
-    border-radius: 25px;
-    width: 100%;
-    box-shadow: 5px 6px 13px 2px rgba(0, 0, 0, 0.45);
-  }
-  textarea {
-    min-height: 10em;
-    min-width: 100%;
-  }
-  .contactButton {
-    margin: 0 auto;
-    text-align: center;
+  background-color: rgb(200, 200, 200);
+  padding: 0 10px 30px 10px;
+}
+.contact-layout {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+  background: linear-gradient(to right, #141e30, #243b55);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+}
+.contact-text {
+  padding: 20px;
+  color: #fff;
+  max-width: 300px;
+  font-size: 22px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
 }
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(18, 24, 36);
+  border-radius: 20px;
+  box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+}
+.styled-input {
+  margin: 0 0 1rem 0;
+  position: relative;
+  display: flex;
+}
+.styled-input label {
+  color: rgb(0, 0, 0);
+  padding: 1.2rem 0px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 1em;
+  color: rgb(22, 22, 22);
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+input,
+textarea {
+  padding: 30px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: $white;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border-radius: 25px;
+  width: 100%;
+  box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+}
+textarea {
+  min-height: 10em;
+  width: 100%;
+}
+.contactButton {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .btncontainer {
   display: flex;
   justify-content: center;
@@ -607,4 +601,51 @@ h2:before {
     transform: rotate(1080deg);
     border-color: #1c89ff;
   }
+}
+.footer {
+  padding: 30px 20px 30px 20px;
+  background: hsl(0, 0%, 2%);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 20px;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: linear-gradient(0deg, #ddd, #fff);
+}
+ul li a .fab {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 20px;
+  line-height: calc(60px - 12px);
+  font-size: 30px;
+  color: #262626;
+  transition: 0.3s;
+}
+ul li:nth-child(1) a:hover .fab {
+  color: #000000;
+}
+ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+ul li:nth-child(3) a:hover .fab {
+  color: #007bb6;
+}
+ul li:nth-child(4) a:hover .fab {
+  color: #e4405f;
 }
