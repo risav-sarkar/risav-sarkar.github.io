@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb:hover {
 .projectBtn {
   -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
   height: 45px;
@@ -380,7 +380,7 @@ h2:before {
 
 .projectContainer {
   padding: 50px 100px;
-  background-color: #c8c8c8;
+  background-color: #f3f3f6;
 }
 
 @media (max-width: 1000px) {
@@ -491,8 +491,8 @@ h2:before {
 }
 
 .timeline-body-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#141e30), to(#243b55));
-  background: linear-gradient(to bottom, #141e30, #243b55);
+  background: -webkit-gradient(linear, left top, right top, from(#00163f), to(#004e92));
+  background: linear-gradient(to right, #00163f, #004e92);
   padding-bottom: 10px;
 }
 
@@ -584,8 +584,8 @@ h2:before {
 }
 
 .conatct-form-container {
-  background-color: #c8c8c8;
-  padding: 0 10px 30px 10px;
+  background-color: #f3f3f6;
+  padding: 0 20px 80px 20px;
 }
 
 .contact-layout {
@@ -595,11 +595,8 @@ h2:before {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   place-items: center;
-  gap: 20px;
-  background: -webkit-gradient(linear, left top, right top, from(#141e30), to(#243b55));
-  background: linear-gradient(to right, #141e30, #243b55);
+  background: #ffffff;
   border-radius: 20px;
-  padding: 20px;
   max-width: 1000px;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
@@ -607,7 +604,7 @@ h2:before {
 
 .contact-text {
   padding: 20px;
-  color: #fff;
+  color: black;
   max-width: 300px;
   font-size: 22px;
   text-align: center;
@@ -617,17 +614,23 @@ h2:before {
   .contact-layout {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .contact-text {
+    padding: 40px 20px;
   }
 }
 
 .input-container {
+  position: relative;
   width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #121824;
+  background-size: auto 200px;
   border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#00163f), to(#004e92));
+  background: linear-gradient(to right, #00163f, #004e92);
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
+  padding: 1.5rem;
 }
 
 .styled-input {
@@ -687,6 +690,10 @@ textarea {
 }
 
 .btncontainer {
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

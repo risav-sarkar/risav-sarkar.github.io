@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .projectBtn {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
   height: 45px;
@@ -281,7 +281,7 @@ h2:before {
 }
 .projectContainer {
   padding: 50px 100px;
-  background-color: rgb(200, 200, 200);
+  background-color: #f3f3f6;
 }
 @media (max-width: 1000px) {
   .projectContainer {
@@ -364,7 +364,7 @@ h2:before {
 }
 
 .timeline-body-container {
-  background: linear-gradient(to bottom, #141e30, #243b55);
+  background: linear-gradient(to right, #00163f, #004e92);
   padding-bottom: 10px;
   .timeline_body {
     max-width: 700px;
@@ -441,24 +441,22 @@ h2:before {
 }
 
 .conatct-form-container {
-  background-color: rgb(200, 200, 200);
-  padding: 0 10px 30px 10px;
+  background-color: #f3f3f6;
+  padding: 0 20px 80px 20px;
 }
 .contact-layout {
   margin: 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  gap: 20px;
-  background: linear-gradient(to right, #141e30, #243b55);
+  background: $white;
   border-radius: 20px;
-  padding: 20px;
   max-width: 1000px;
   box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
 }
 .contact-text {
   padding: 20px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   max-width: 300px;
   font-size: 22px;
   text-align: center;
@@ -466,15 +464,20 @@ h2:before {
 @media (max-width: 700px) {
   .contact-layout {
     grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .contact-text {
+    padding: 40px 20px;
   }
 }
 .input-container {
+  position: relative;
   width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  background-color: rgb(18, 24, 36);
+  background-size: auto 200px;
   border-radius: 20px;
+  background: linear-gradient(to right, #00163f, #004e92);
   box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+  padding: 1.5rem;
 }
 .styled-input {
   margin: 0 0 1rem 0;
@@ -525,6 +528,10 @@ textarea {
 }
 
 .btncontainer {
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
