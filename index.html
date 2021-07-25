@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="img/Profile.png" />
     <title>Risav Sarkar</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/stars_intro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,49 +18,59 @@
     />
   </head>
   <body>
-    <div class="background">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div class="heroSection">
-        <p>Hi!, I'm</p>
-        <h1>Risav Sarkar</h1>
-        <div>
-          <a class="smoothscroll" href="#about">
-            <div class="scroll-down"></div>
-          </a>
-        </div>
+    <section>
+      <div class="header">
+        <a target="_blank" rel="noopener noreferrer" href=""
+          >Skills
+          <div class="pillUnderline"></div>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href=""
+          >Projects
+          <div class="pillUnderline"></div>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href=""
+          >Journey
+          <div class="pillUnderline"></div>
+        </a>
       </div>
-    </div>
+    </section>
 
     <section>
-      <div class="aboutmeSection" id="about">
-        <div class="intro">
-          <div class="introsection">
-            <div class="heroImgContainer">
-              <img id="heroImg" src="img/Profile.png" alt="Picture" srcset="" />
-            </div>
-            <div class="aboutme">
-              <p class="quotes1"><</p>
-              <div class="aboutme_text">
-                <p>
-                  I'm a first year student pursuing Computer Science
-                  Engineering. I'm always ready to have new experiences, meet
-                  new people and learn new things. I find the idea of creating
-                  value for people and impacting the world through my work
-                  gratifying.
-                </p>
-                <br />
-                <div class="emailview">
-                  <i class="fas fa-envelope"></i>&nbsp &nbsp
-                  iamrisavsarkar@gmail.com
-                </div>
-              </div>
-              <p class="quotes1 quote_left">/></p>
+      <div class="hero-section-container">
+        <div class="hero-section-body">
+          <div class="heroImg">
+            <img id="heroImg" src="img/Profile.png" alt="Picture" srcset="" />
+          </div>
+          <div class="heroText">
+            <h4>Hi!, I'm</h4>
+            <h1>Risav</h1>
+            <h1>Sarkar</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
+              repudiandae est. Voluptates iure deserunt reprehenderit ullam,
+            </p>
+            <div class="heroBtnContainer">
+              <a target="_blank" rel="noopener noreferrer" href="">
+                <button class="heroBtn1">Resume</button>
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="">
+                <button class="heroBtn2">Let's Talk!</button>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <main class="skills">
+    <section>
+      <div class="skills-container">
+        <div class="skills-container-body">
+          <div class="sectionTitleBar">
+            <h2>Things</h2>
+            <h2>I know</h2>
+            <div class="pill"></div>
+          </div>
+          <div class="skills">
             <article class="badge java">
               <div class="rounded">
                 <img
@@ -145,111 +154,116 @@
     </section>
 
     <section>
-      <div class="projectContainer">
-        <div class="sectionTitleBar dark-titlebar"><h2>PROJECTS</h2></div>
-        <div class="cards">
-          <div class="card">
-            <img src="img/todo.jpg" class="cardImage" alt="" />
-            <div class="cardOverlay">
-              <div class="cardHeader">
-                <div class="cardTitle"><p>To-Do</p></div>
-                <div class="cardSubhead"><p>Web-App</p></div>
-              </div>
-              <div class="btnContainer">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://risav-sarkar.github.io/To-Do"
-                >
-                  <button class="projectBtn visit-button">
-                    <img
-                      class="btnIcons"
-                      src="img/Link.svg"
-                      alt=""
-                      srcset=""
-                    />Visit
-                  </button></a
-                >
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/risav-sarkar/To-Do"
-                >
-                  <button class="projectBtn git-button">
-                    <img
-                      class="btnIcons"
-                      src="img/github_dark.svg"
-                      alt=""
-                      srcset=""
-                    />Github
-                  </button>
-                </a>
+      <div class="project-body-container">
+        <div class="project-body">
+          <div class="sectionTitleBar">
+            <h2>Projects</h2>
+            <div class="pill"></div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="img/todo.jpg" class="cardImage" alt="" />
+              <div class="cardOverlay">
+                <div class="cardHeader">
+                  <div class="cardTitle"><p>To-Do</p></div>
+                  <div class="cardSubhead"><p>Web-App</p></div>
+                </div>
+                <div class="btnContainer">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://risav-sarkar.github.io/To-Do"
+                  >
+                    <button class="projectBtn visit-button">
+                      <img
+                        class="btnIcons"
+                        src="img/Link.svg"
+                        alt=""
+                        srcset=""
+                      />Visit
+                    </button></a
+                  >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/risav-sarkar/To-Do"
+                  >
+                    <button class="projectBtn git-button">
+                      <img
+                        class="btnIcons"
+                        src="img/github_dark.svg"
+                        alt=""
+                        srcset=""
+                      />Github
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="img/extension.jpg" class="cardImage" alt="" />
-            <div class="cardOverlay">
-              <div class="cardHeader">
-                <div class="cardTitle"><p>Save Page URL</p></div>
-                <div class="cardSubhead"><p>Extension</p></div>
-              </div>
-              <div class="btnContainer">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/risav-sarkar/Save-Page-URL"
-                >
-                  <button class="projectBtn git-button">
-                    <img
-                      class="btnIcons"
-                      src="img/github_dark.svg"
-                      alt=""
-                      srcset=""
-                    />Github
-                  </button>
-                </a>
+            <div class="card">
+              <img src="img/extension.jpg" class="cardImage" alt="" />
+              <div class="cardOverlay">
+                <div class="cardHeader">
+                  <div class="cardTitle"><p>Save Page URL</p></div>
+                  <div class="cardSubhead"><p>Extension</p></div>
+                </div>
+                <div class="btnContainer">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/risav-sarkar/Save-Page-URL"
+                  >
+                    <button class="projectBtn git-button">
+                      <img
+                        class="btnIcons"
+                        src="img/github_dark.svg"
+                        alt=""
+                        srcset=""
+                      />Github
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img src="img/website.jpg" class="cardImage" alt="" />
-            <div class="cardOverlay">
-              <div class="cardHeader">
-                <div class="cardTitle"><p>Personal Website</p></div>
-                <div class="cardSubhead"><p>Website</p></div>
-              </div>
-              <div class="btnContainer">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://risav-sarkar.github.io/"
-                >
-                  <button class="projectBtn visit-button">
-                    <img
-                      class="btnIcons"
-                      src="img/Link.svg"
-                      alt=""
-                      srcset=""
-                    />Visit
-                  </button></a
-                >
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/risav-sarkar/risav-sarkar.github.io"
-                >
-                  <button class="projectBtn git-button">
-                    <img
-                      class="btnIcons"
-                      src="img/github_dark.svg"
-                      alt=""
-                      srcset=""
-                    />Github
-                  </button>
-                </a>
+            <div class="card">
+              <img src="img/website.jpg" class="cardImage" alt="" />
+              <div class="cardOverlay">
+                <div class="cardHeader">
+                  <div class="cardTitle"><p>Personal Website</p></div>
+                  <div class="cardSubhead"><p>Website</p></div>
+                </div>
+                <div class="btnContainer">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://risav-sarkar.github.io/"
+                  >
+                    <button class="projectBtn visit-button">
+                      <img
+                        class="btnIcons"
+                        src="img/Link.svg"
+                        alt=""
+                        srcset=""
+                      />Visit
+                    </button></a
+                  >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/risav-sarkar/risav-sarkar.github.io"
+                  >
+                    <button class="projectBtn git-button">
+                      <img
+                        class="btnIcons"
+                        src="img/github_dark.svg"
+                        alt=""
+                        srcset=""
+                      />Github
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -259,14 +273,17 @@
 
     <section>
       <div class="timeline-body-container">
-        <div class="sectionTitleBar"><h2>My Journey</h2></div>
-        <div class="timeline_body">
+        <div class="timeline-body">
+          <div class="sectionTitleBar">
+            <h2>My Journey</h2>
+            <div class="pill"></div>
+          </div>
           <div class="timeline">
             <div class="timeline-container primary">
               <div class="timeline-icon">
                 <i class="fas fa-school"></i>
               </div>
-              <div class="timeline-body">
+              <div class="timelineBody">
                 <div class="timeline-title">
                   <p>Calcutta Public School</p>
                   <p class="date">∞-2020</p>
@@ -282,7 +299,7 @@
               <div class="timeline-icon">
                 <i class="fas fa-graduation-cap"></i>
               </div>
-              <div class="timeline-body">
+              <div class="timelineBody">
                 <div class="timeline-title">
                   <p>B.P. Poddar Institute Of Management And Technology</p>
                   <p class="date">2020-2024</p>
@@ -299,48 +316,51 @@
     </section>
 
     <section>
-      <div class="conatct-form-container">
-        <div class="sectionTitleBar dark-titlebar" id="contactbar">
-          <h2>Contact</h2>
-        </div>
-        <div class="contact-layout">
-          <div class="contact-text">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              commodi cum dolores labore vitae, asperiores, assumenda culpa iste
-              veniam facilis ducimus! Soluta rem rerum harum eum vitae cumque
-              officiis repellat.
-            </p>
-          </div>
-          <div class="input-container">
-            <form id="contactForm">
-              <div class="styled-input">
-                <input type="text" id="name" required />
-                <label>Name</label>
+      <div class="contact-form-container">
+        <div class="contact-form-body">
+          <div class="contact-body-container">
+            <div class="contact-text">
+              <div class="sectionTitleBar">
+                <h2>Contact</h2>
+                <div class="pill"></div>
               </div>
-              <div class="styled-input">
-                <input type="text" id="email" required />
-                <label>Email</label>
-              </div>
-              <div class="styled-input">
-                <textarea required id="message"></textarea>
-                <label>Message</label>
-              </div>
-              <div class="btncontainer">
-                <button
-                  class="submitbutton success"
-                  id="submitBtn"
-                  type="submit"
-                >
-                  Send
-                </button>
-                <div class="loader">
-                  <div class="check">
-                    <i class="fa fa-check" aria-hidden="true"></i>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+                commodi cum dolores labore vitae, asperiores, assumenda culpa
+                iste veniam facilis ducimus! Soluta rem rerum harum eum vitae
+                cumque officiis repellat.
+              </p>
+            </div>
+            <div class="input-container">
+              <form id="contactForm">
+                <div class="styled-input">
+                  <input type="text" id="name" required />
+                  <label>Name</label>
+                </div>
+                <div class="styled-input">
+                  <input type="text" id="email" required />
+                  <label>Email</label>
+                </div>
+                <div class="styled-input">
+                  <textarea required id="message"></textarea>
+                  <label>Message</label>
+                </div>
+                <div class="btncontainer">
+                  <button
+                    class="submitbutton success"
+                    id="submitBtn"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                  <div class="loader">
+                    <div class="check">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
