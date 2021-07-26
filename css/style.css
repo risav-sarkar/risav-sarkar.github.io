@@ -104,8 +104,6 @@ a {
 .header a {
   margin: 0 10px;
   font-size: 20px;
-  -webkit-transition: all 2s;
-  transition: all 2s;
   position: relative;
 }
 
@@ -115,14 +113,14 @@ a {
   height: 5px;
   background-color: #ffffff;
   border-radius: 20px;
-  display: none;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  opacity: 0%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: absolute;
 }
 
 .header a:hover .pillUnderline {
-  display: block;
+  opacity: 100%;
 }
 
 .hero-section-container {
@@ -203,16 +201,28 @@ a {
   color: white;
   letter-spacing: 1.5px;
   cursor: pointer;
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-section-container .heroBtnContainer .heroBtn1 {
   background: -webkit-gradient(linear, right top, left top, from(#0575e6), to(#021b79));
   background: linear-gradient(to left, #0575e6, #021b79);
   margin-right: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .hero-section-container .heroBtnContainer .heroBtn2 {
   border: 2px solid #0575e6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hero-section-container .heroBtnContainer button:hover {
+  width: 125px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 830px) {
@@ -226,10 +236,6 @@ a {
     max-width: 400px;
     gap: 50px;
   }
-}
-
-.skills-container {
-  padding: 50px 0px;
 }
 
 .skills-container .skills-container-body {
@@ -256,6 +262,8 @@ a {
   max-width: 900px;
   text-align: center;
   background-color: #2a2e3d;
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
 
@@ -330,10 +338,6 @@ a {
   }
 }
 
-.project-body-container {
-  padding: 50px 0px;
-}
-
 .project-body-container .project-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +371,12 @@ a {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   list-style-type: none;
+}
+
+@media (min-width: 900px) {
+  .project-body-container .cards {
+    padding-bottom: 50px;
+  }
 }
 
 .project-body-container .card {
@@ -460,8 +470,8 @@ a {
 }
 
 .project-body-container .projectBtn {
-  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   cursor: pointer;
   width: 100%;
@@ -483,21 +493,21 @@ a {
 }
 
 .project-body-container .visit-button:hover {
-  background: #161616;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .project-body-container .git-button {
   border: 2px solid #0575e6;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #0575e6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .project-body-container .git-button:hover {
-  background-color: #cfcecd;
+  background-color: #0575e6;
+  color: #ffffff;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -511,7 +521,7 @@ a {
 }
 
 .timeline-body-container {
-  padding: 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 
 .timeline-body-container .timeline-body {
@@ -874,11 +884,8 @@ a {
 }
 
 .footer {
-  padding: 30px 20px 30px 20px;
+  padding: 50px 20px;
   background: #050505;
-}
-
-.footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,6 +895,27 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.footer .footerText {
+  color: #ffffff;
+}
+
+.footer .footerLine {
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  place-items: center;
 }
 
 .footer ul li {
@@ -936,4 +964,16 @@ a {
 
 .footer ul li:nth-child(4) a:hover .fab {
   color: #e4405f;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerText {
+    margin-bottom: 50px;
+  }
 }

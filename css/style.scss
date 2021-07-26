@@ -83,7 +83,6 @@ a {
   a {
     margin: 0 10px;
     font-size: 20px;
-    transition: all 2s;
     position: relative;
   }
   .pillUnderline {
@@ -92,13 +91,13 @@ a {
     height: 5px;
     background-color: $white;
     border-radius: 20px;
-    display: none;
-    transition: all 2s;
+    opacity: 0%;
+    transition: 0.3s;
     position: absolute;
   }
   a:hover {
     .pillUnderline {
-      display: block;
+      opacity: 100%;
     }
   }
 }
@@ -160,13 +159,20 @@ a {
       color: white;
       letter-spacing: 1.5px;
       cursor: pointer;
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     }
     .heroBtn1 {
       background: linear-gradient(to left, $blue_light, $blue_dark);
       margin-right: 10px;
+      transition: 0.4s;
     }
     .heroBtn2 {
       border: 2px solid $blue_light;
+      transition: 0.4s;
+    }
+    button:hover {
+      width: 125px;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     }
   }
   @media (max-width: 830px) {
@@ -183,7 +189,6 @@ a {
 }
 
 .skills-container {
-  padding: 50px 0px;
   .skills-container-body {
     display: grid;
     place-items: center;
@@ -203,6 +208,7 @@ a {
     max-width: 900px;
     text-align: center;
     background-color: $grey_light;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     .badge {
       margin: 1.5em 2em;
@@ -263,7 +269,6 @@ a {
 }
 
 .project-body-container {
-  padding: 50px 0px;
   .project-body {
     display: flex;
     align-items: center;
@@ -283,6 +288,11 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     list-style-type: none;
+  }
+  @media (min-width: 900px) {
+    .cards {
+      padding-bottom: 50px;
+    }
   }
   .card {
     margin: 0 auto;
@@ -351,7 +361,7 @@ a {
     grid-gap: 5px;
   }
   .projectBtn {
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     cursor: pointer;
     width: 100%;
@@ -369,17 +379,17 @@ a {
     transition: 0.3s;
   }
   .visit-button:hover {
-    background: #161616;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .git-button {
     border: 2px solid $blue_light;
-    background: $white;
+    background-color: $white;
     color: $blue_light;
     transition: 0.3s;
   }
   .git-button:hover {
-    background-color: rgb(207, 206, 205);
+    background-color: $blue_light;
+    color: $white;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .projectBtn img {
@@ -392,7 +402,7 @@ a {
 }
 
 .timeline-body-container {
-  padding: 50px 0px;
+  padding: 50px 0px 50px 0px;
   .timeline-body {
     display: grid;
     place-items: center;
@@ -654,13 +664,27 @@ a {
 }
 
 .footer {
-  padding: 30px 20px 30px 20px;
+  padding: 50px 20px;
   background: hsl(0, 0%, 2%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
+  .footerText {
+    color: $white;
+  }
+  .footerLine {
+    height: 5px;
+    background-color: $white;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
   }
   ul li {
     list-style: none;
@@ -698,5 +722,13 @@ a {
   }
   ul li:nth-child(4) a:hover .fab {
     color: #e4405f;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerText {
+    margin-bottom: 50px;
   }
 }
