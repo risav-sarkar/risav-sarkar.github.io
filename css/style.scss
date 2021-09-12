@@ -4,6 +4,7 @@ $blue_light: #0575e6;
 $blue_dark: #021b79;
 $grey_light: #2a2e3d;
 $grey_dark: #141416;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 body {
   height: 100%;
   width: 100%;
@@ -196,6 +197,7 @@ a {
 }
 
 .skills-container {
+  margin-bottom: 40px;
   .skills-container-body {
     display: grid;
     place-items: center;
@@ -494,7 +496,7 @@ a {
 }
 
 .contact-form-container {
-  padding: 50px 10px 150px 10px;
+  padding: 50px 20px 150px 20px;
   .contact-body-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
