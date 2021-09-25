@@ -205,20 +205,26 @@ a {
     gap: 100px;
     max-width: $container-width;
     margin: 0 auto;
+    background-image: url(../img/blob1.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 600px;
   }
   @media (max-width: 885px) {
     .skills-container-body {
       grid-template-columns: 1fr;
       gap: 0px;
     }
+    .skills-container-body {
+      background-position: bottom;
+      background-size: 550px;
+    }
   }
   .skills {
-    width: 90%;
     max-width: 900px;
     text-align: center;
-    background-color: $grey_light;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
+
+    padding: 40px 0 20px 0;
     .badge {
       margin: 1.5em 2em;
       width: 110px;
