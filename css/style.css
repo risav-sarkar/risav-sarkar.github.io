@@ -54,10 +54,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
 .sectionTitleBar {
   font-weight: 700;
-  color: #ffffff;
-  font-size: 2.5em;
+  color: #f0f0f0;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +94,7 @@ a {
   margin-top: 5px;
   width: 100px;
   height: 10px;
-  background-color: white;
+  background-color: #f0f0f0;
   border-radius: 20px;
 }
 
@@ -112,7 +125,7 @@ a {
   margin-top: 5px;
   width: 100%;
   height: 5px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-radius: 20px;
   opacity: 0%;
   -webkit-transition: all 0.2s;
@@ -129,248 +142,244 @@ a {
   display: grid;
   place-items: center;
   height: 100vh;
+  color: #f0f0f0;
+  text-align: left;
 }
 
-.hero-section-container .hero-section-body {
+.hero-section-container .heroSection {
+  padding: 20px;
+}
+
+.hero-section-container .heroSection h1 {
+  line-height: 95px;
+  font-size: 100px;
+  letter-spacing: 8px;
+}
+
+.hero-section-container .heroSection p {
+  font-size: 30px;
+}
+
+@media (max-width: 500px) {
+  .hero-section-container .heroSection h1 {
+    line-height: 75px;
+    font-size: 80px;
+    letter-spacing: 4px;
+  }
+}
+
+.hero-section-container .heroSection .pill {
+  height: 10px;
+  width: 100px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.aboutme-container {
+  background-color: #f0f0f0;
+  padding: 120px 0;
+  color: #072142;
+}
+
+.aboutme-container .aboutmeSection {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 100px;
+}
+
+.aboutme-container .aboutmeSection .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  max-width: 1000px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.aboutme-container .aboutmeSection .title img {
+  height: 3em;
+}
+
+.aboutme-container .aboutmeSection .heroSection {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: 900px;
-  grid-gap: 150px;
+  grid-gap: 100px;
   place-items: center;
 }
 
-.hero-section-container .heroImg {
-  width: 320px;
-  height: 320px;
-}
-
-.hero-section-container .heroImg img {
-  width: 100%;
+.aboutme-container .aboutmeSection .heroSection img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  -webkit-box-shadow: -8px 8px 30px rgba(137, 61, 70, 0.726);
-          box-shadow: -8px 8px 30px rgba(137, 61, 70, 0.726);
+  -webkit-box-shadow: 0px 0px 50px 1px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 50px 1px rgba(0, 0, 43, 0.6);
 }
 
-.hero-section-container .heroText {
-  width: 100%;
-  height: 100%;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0px;
-}
-
-.hero-section-container .heroText h4 {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-.hero-section-container .heroText h1 {
-  font-size: 100px;
-  margin: 0px;
-  line-height: 90px;
-}
-
-.hero-section-container .heroText p {
-  margin-top: 20px;
+.aboutme-container .aboutmeSection .heroSection p {
   font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 450px;
 }
 
-.hero-section-container .heroBtnContainer {
-  padding: 30px 0px 0px 0px;
-}
-
-.hero-section-container .heroBtnContainer button {
-  width: 120px;
-  height: 40px;
+.aboutme-container .aboutmeSection .heroSection button {
+  outline: none;
   border-radius: 20px;
   font-size: 16px;
-  border: none;
-  background-color: transparent;
-  color: white;
   letter-spacing: 1.5px;
+  padding: 8px 16px;
   cursor: pointer;
-  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.hero-section-container .heroBtnContainer .heroBtn1 {
-  background: -webkit-gradient(linear, right top, left top, from(#0575e6), to(#021b79));
-  background: linear-gradient(to left, #0575e6, #021b79);
+  margin-top: 20px;
   margin-right: 10px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.hero-section-container .heroBtnContainer .heroBtn2 {
-  border: 2px solid #0575e6;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.hero-section-container .heroBtnContainer button:hover {
-  width: 125px;
-  background: #0575e6;
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 830px) {
-  .hero-section-container .heroImg {
-    width: 250px;
-    height: 250px;
-  }
-  .hero-section-container .hero-section-body {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    max-width: 400px;
-    grid-gap: 50px;
-  }
-}
-
-@media (min-width: 831px) and (max-width: 1000px) {
-  .hero-section-container {
-    padding: 0 20px;
-  }
-  .hero-section-container .hero-section-body {
-    grid-gap: 30px;
-  }
-}
-
-@media (max-width: 830px) {
-  .hero-section-container {
-    padding: 100px 20px 0px 20px;
-    height: auto;
-  }
-}
-
-.skills-container {
-  margin-bottom: 40px;
-}
-
-.skills-container .skills-container-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  max-width: 1500px;
-  padding: 0 20px;
-}
-
-.skills-container .sectionTitleBar {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-@media (max-width: 800px) {
-  .skills-container .skills-container-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .skills-container .skills-container-body .skills {
-    max-width: 500px;
-  }
-}
-
-.skills-container .skills {
-  text-align: center;
-  background-image: url(../img/svg1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-  background-color: #2a2e3d;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 40vw;
-}
-
-.skills-container .skills .badge {
-  margin: 1em;
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
-          box-shadow: 0 2px 15px 0 #0c0c0c;
-  background-color: rgba(235, 235, 235, 0.8);
+  border: 3px solid #072142;
+  -webkit-box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
+          box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.skills-container .skills .badge:hover {
-  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+.aboutme-container .aboutmeSection .heroSection .btn1 {
+  color: #f0f0f0;
+  background-color: #072142;
 }
 
-.skills-container .skills .rounded {
-  width: 75px;
-  height: 75px;
-  background-color: #ffffff;
+.aboutme-container .aboutmeSection .heroSection .btn1:hover {
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+          box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+  border: 3px solid #163d70;
+  background-color: #163d70;
+}
+
+.aboutme-container .aboutmeSection .heroSection .btn2 {
+  color: #072142;
+  background-color: #f0f0f0;
+}
+
+.aboutme-container .aboutmeSection .heroSection .btn2:hover {
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+          box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+  border: 3px solid #163d70;
+  background-color: #163d70;
+  color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+  .aboutme-container .aboutmeSection .heroSection {
+    grid-gap: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutme-container .aboutmeSection .heroSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .aboutme-container .aboutmeSection .heroSection div {
+    padding: 15px;
+  }
+}
+
+.aboutme-container .aboutmeSection .skillsSection {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 1000px;
+  place-items: center;
+}
+
+.aboutme-container .aboutmeSection .skillsSection .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  max-width: 460px;
+  width: 100%;
+}
+
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails {
+  width: 100%;
+}
+
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails h3 {
+  letter-spacing: 2px;
+}
+
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails .bar {
+  margin-top: 5px;
+  height: 20px;
+  width: 100%;
+  background-color: #f0f0f0;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
+          box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
+  position: relative;
 }
 
-.skills-container .skills .java {
-  background: #1565c0;
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails .bar .sixty {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  border-radius: 20px;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
 
-.skills-container .skills .python {
-  background: #ffd900;
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails .bar .seventy {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
 
-.skills-container .skills .cprog {
-  background: #3949ab;
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails .bar .eighty {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
 
-.skills-container .skills .javascript {
-  background: #ffd600;
+.aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails .bar .ninety {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
 
-.skills-container .skills .html {
-  background: darkorange;
-}
-
-.skills-container .skills .css {
-  background: #039ae5;
-}
-
-.skills-container .skills .react {
-  background: #5ed3f3;
+@media (max-width: 650px) {
+  .aboutme-container .aboutmeSection .skillsSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .project-body-container .project-body {
@@ -441,7 +450,7 @@ a {
   z-index: 1;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: 0.2s ease-in-out;
@@ -470,7 +479,7 @@ a {
   font-weight: 600;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: 0.2s ease-in-out;
@@ -536,7 +545,7 @@ a {
 
 .project-body-container .git-button {
   border: 2px solid #0575e6;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   color: #0575e6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -544,7 +553,7 @@ a {
 
 .project-body-container .git-button:hover {
   background-color: #0575e6;
-  color: #ffffff;
+  color: #f0f0f0;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -586,7 +595,7 @@ a {
   position: relative;
   padding-left: 4rem;
   margin: 0 0 0 30px;
-  color: #ffffff;
+  color: #f0f0f0;
 }
 
 .timeline-body-container .timeline:before {
@@ -676,7 +685,7 @@ a {
   border-radius: 20px;
   margin: 0 auto;
   background-color: #2a2e3d;
-  color: #ffffff;
+  color: #f0f0f0;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
   background-image: url(../img/svg3.svg);
@@ -762,7 +771,7 @@ a {
   padding: 30px;
   border: none;
   font-size: 1.2rem;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   color: black;
   outline: none;
   border-radius: 25px;
@@ -807,7 +816,7 @@ a {
   width: 120px;
   height: 36px;
   border-radius: 25px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border: none;
   outline: none;
   color: black;
@@ -939,12 +948,12 @@ a {
 }
 
 .footer .footerText {
-  color: #ffffff;
+  color: #f0f0f0;
 }
 
 .footer .footerLine {
   height: 5px;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   border-radius: 20px;
   margin-top: 5px;
   margin-bottom: 20px;

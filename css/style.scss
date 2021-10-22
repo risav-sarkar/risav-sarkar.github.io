@@ -1,10 +1,13 @@
-$white: #ffffff;
 $container-width: 1500px;
 $blue_light: #0575e6;
 $blue_dark: #021b79;
 $grey_light: #2a2e3d;
 $grey_dark: #121217;
+$white: rgb(240, 240, 240);
+$font_blue: #072142;
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
 body {
   height: 100%;
   width: 100%;
@@ -52,10 +55,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
 .sectionTitleBar {
   font-weight: 700;
-  color: #ffffff;
-  font-size: 2.5em;
+  color: $white;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -68,7 +84,7 @@ a {
     margin-top: 5px;
     width: 100px;
     height: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
     border-radius: 20px;
   }
 }
@@ -108,178 +124,226 @@ a {
   display: grid;
   place-items: center;
   height: 100vh;
-  .hero-section-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    max-width: 900px;
-    grid-gap: 150px;
-    place-items: center;
-  }
-  .heroImg {
-    width: 320px;
-    height: 320px;
-  }
-  .heroImg img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: -8px 8px 30px rgba(137, 61, 70, 0.726);
-  }
-  .heroText {
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 0px;
-    h4 {
-      font-size: 40px;
-      margin-bottom: 5px;
-    }
+  color: $white;
+  text-align: left;
+
+  .heroSection {
+    padding: 20px;
+
     h1 {
+      line-height: 95px;
       font-size: 100px;
-      margin: 0px;
-      line-height: 90px;
+      letter-spacing: 8px;
     }
+
     p {
-      margin-top: 20px;
-      font-size: 20px;
+      font-size: 30px;
     }
-  }
-  .heroBtnContainer {
-    padding: 30px 0px 0px 0px;
 
-    button {
-      width: 120px;
-      height: 40px;
-      border-radius: 20px;
-      font-size: 16px;
-      border: none;
-      background-color: transparent;
-      color: white;
-      letter-spacing: 1.5px;
-      cursor: pointer;
-      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
-    }
-    .heroBtn1 {
-      background: linear-gradient(to left, $blue_light, $blue_dark);
-      margin-right: 10px;
-      transition: 0.4s;
-    }
-    .heroBtn2 {
-      border: 2px solid $blue_light;
-      transition: 0.4s;
-    }
-    button:hover {
-      width: 125px;
-      background: $blue_light;
-      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-  }
-  @media (max-width: 830px) {
-    .heroImg {
-      width: 250px;
-      height: 250px;
-    }
-    .hero-section-body {
-      grid-template-columns: 1fr;
-      max-width: 400px;
-      grid-gap: 50px;
-    }
-  }
-}
-@media (min-width: 831px) and (max-width: 1000px) {
-  .hero-section-container {
-    padding: 0 20px;
-    .hero-section-body {
-      grid-gap: 30px;
-    }
-  }
-}
-
-@media (max-width: 830px) {
-  .hero-section-container {
-    padding: 100px 20px 0px 20px;
-    height: auto;
-  }
-}
-
-.skills-container {
-  margin-bottom: 40px;
-  .skills-container-body {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    max-width: $container-width;
-    padding: 0 20px;
-  }
-  .sectionTitleBar {
-    width: fit-content;
-  }
-  @media (max-width: 800px) {
-    .skills-container-body {
-      flex-direction: column;
-      .skills {
-        max-width: 500px;
+    @media (max-width: 500px) {
+      h1 {
+        line-height: 75px;
+        font-size: 80px;
+        letter-spacing: 4px;
       }
     }
-  }
-  .skills {
-    text-align: center;
-    background-image: url(../img/svg1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px;
-    background-color: $grey_light;
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 40vw;
-    .badge {
-      margin: 1em;
+
+    .pill {
+      height: 10px;
       width: 100px;
-      height: 100px;
-      border-radius: 25px;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
-      background-color: rgba(235, 235, 235, 0.8);
-      transition: 0.3s;
-    }
-    .badge:hover {
-      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-    .rounded {
-      width: 75px;
-      height: 75px;
       background-color: $white;
       border-radius: 20px;
-      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+      margin: 30px 0;
     }
-    .java {
-      background: rgb(21, 101, 192);
+  }
+}
+
+.aboutme-container {
+  background-color: $white;
+  padding: 120px 0;
+  color: $font_blue;
+
+  .aboutmeSection {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-gap: 100px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 1000px;
+      padding-bottom: 50px;
+      margin: 0 auto;
+      img {
+        height: 3em;
+      }
     }
-    .python {
-      background: rgb(255, 217, 0);
+
+    .heroSection {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      max-width: 900px;
+      grid-gap: 100px;
+      place-items: center;
+
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px 1px rgba(0, 0, 43, 0.6);
+      }
+      p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        max-width: 450px;
+      }
+      button {
+        outline: none;
+        border-radius: 20px;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        padding: 8px 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
+        border: 3px solid $font_blue;
+        box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
+        transition: 0.3s;
+      }
+
+      .btn1 {
+        color: $white;
+        background-color: $font_blue;
+        &:hover {
+          box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+          border: 3px solid #163d70;
+          background-color: #163d70;
+        }
+      }
+
+      .btn2 {
+        color: $font_blue;
+        background-color: $white;
+        &:hover {
+          box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
+          border: 3px solid #163d70;
+          background-color: #163d70;
+          color: $white;
+        }
+      }
     }
-    .cprog {
-      background: rgb(57, 73, 171);
+
+    @media (max-width: 900px) {
+      .heroSection {
+        grid-gap: 50px;
+      }
     }
-    .javascript {
-      background: rgb(255, 214, 0);
+    @media (max-width: 700px) {
+      .heroSection {
+        grid-template-columns: 1fr;
+        div {
+          padding: 15px;
+        }
+      }
     }
-    .html {
-      background: rgb(255, 140, 0);
+
+    .skillsSection {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      max-width: 1000px;
+      place-items: center;
+      .skills {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        max-width: 460px;
+        width: 100%;
+        .skillsDetails {
+          width: 100%;
+          h3 {
+            letter-spacing: 2px;
+          }
+          .bar {
+            margin-top: 5px;
+            height: 20px;
+            width: 100%;
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
+            position: relative;
+
+            .sixty {
+              position: absolute;
+              width: 60%;
+              height: 100%;
+              border-radius: 20px;
+              left: 0;
+              background-image: linear-gradient(
+                to right,
+                #072142,
+                #8c2b7a,
+                #ff4d5a
+              );
+            }
+
+            .seventy {
+              position: absolute;
+              width: 70%;
+              height: 100%;
+              border-radius: 20px;
+              left: 0;
+              background-image: linear-gradient(
+                to right,
+                #072142,
+                #8c2b7a,
+                #ff4d5a
+              );
+            }
+
+            .eighty {
+              position: absolute;
+              width: 80%;
+              height: 100%;
+              border-radius: 20px;
+              left: 0;
+              background-image: linear-gradient(
+                to right,
+                #072142,
+                #8c2b7a,
+                #ff4d5a
+              );
+            }
+
+            .ninety {
+              position: absolute;
+              width: 90%;
+              height: 100%;
+              border-radius: 20px;
+              left: 0;
+              background-image: linear-gradient(
+                to right,
+                #072142,
+                #8c2b7a,
+                #ff4d5a
+              );
+            }
+          }
+        }
+      }
     }
-    .css {
-      background: rgb(3, 154, 229);
-    }
-    .react {
-      background: #5ed3f3;
+
+    @media (max-width: 650px) {
+      .skillsSection {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
