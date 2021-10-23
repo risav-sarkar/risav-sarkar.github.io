@@ -16,6 +16,11 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Nunito", sans-serif;
+  background-image: url(../img/wrapped.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-color: $font_darkBlue;
 }
 @media (max-width: 830px) {
   body {
@@ -143,11 +148,6 @@ p {
   height: 100vh;
   color: $white;
   text-align: left;
-  background-image: url(../img/wrapped.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-  background-color: $font_darkBlue;
 
   .heroSection {
     padding: 20px;
@@ -456,7 +456,6 @@ p {
 
 .timeline-body-container {
   padding: 50px 0px 50px 0px;
-  background-color: $font_darkBlue;
   .timeline-body {
     display: grid;
     place-items: center;
@@ -542,7 +541,6 @@ p {
 
 .contact-form-container {
   padding: 50px 20px 150px 20px;
-  background-color: $font_darkBlue;
   .contact-body-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
