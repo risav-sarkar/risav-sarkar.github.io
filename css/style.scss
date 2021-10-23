@@ -938,6 +938,7 @@ p {
 }
 
 .projectImage {
+  background-color: white;
   padding: 100px 20px 50px 20px;
   display: grid;
   place-items: center;
@@ -947,36 +948,39 @@ p {
   }
 }
 
-.projectContainer {
-  max-width: 900px;
-  margin: 0 auto;
-  color: $font_blue;
-  display: grid;
-  gap: 60px;
-  padding: 50px 20px;
+.projectContainerBody {
+  background-color: white;
+  .projectContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $font_blue;
+    display: grid;
+    gap: 60px;
+    padding: 50px 20px;
 
-  .title {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    img {
-      height: 40px;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      img {
+        height: 40px;
+      }
     }
-  }
 
-  p {
-    margin-top: 30px;
-  }
+    p {
+      margin-top: 30px;
+    }
 
-  .techLogos {
-    margin-top: 30px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    .techLogos {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
 
-    img {
-      height: 70px;
-      width: 70px;
+      img {
+        height: 70px;
+        width: 70px;
+      }
     }
   }
 }

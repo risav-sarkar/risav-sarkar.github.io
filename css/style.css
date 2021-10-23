@@ -1129,6 +1129,7 @@ p {
 }
 
 .projectImage {
+  background-color: white;
   padding: 100px 20px 50px 20px;
   display: -ms-grid;
   display: grid;
@@ -1140,7 +1141,11 @@ p {
   max-height: 100%;
 }
 
-.projectContainer {
+.projectContainerBody {
+  background-color: white;
+}
+
+.projectContainerBody .projectContainer {
   max-width: 900px;
   margin: 0 auto;
   color: #072142;
@@ -1150,7 +1155,7 @@ p {
   padding: 50px 20px;
 }
 
-.projectContainer .title {
+.projectContainerBody .projectContainer .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,15 +1165,15 @@ p {
   gap: 20px;
 }
 
-.projectContainer .title img {
+.projectContainerBody .projectContainer .title img {
   height: 40px;
 }
 
-.projectContainer p {
+.projectContainerBody .projectContainer p {
   margin-top: 30px;
 }
 
-.projectContainer .techLogos {
+.projectContainerBody .projectContainer .techLogos {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,7 +1183,7 @@ p {
       flex-wrap: wrap;
 }
 
-.projectContainer .techLogos img {
+.projectContainerBody .projectContainer .techLogos img {
   height: 70px;
   width: 70px;
 }
