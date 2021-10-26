@@ -46,8 +46,13 @@
         <div class="aboutmeSection">
           <div>
             <div class="heroSection">
-              <img src="img/Profile.png" alt="Picture" srcset="" />
-              <div>
+              <img
+                class="heroImage"
+                src="img/Profile.png"
+                alt="Picture"
+                srcset=""
+              />
+              <div class="heroText">
                 <p>
                   I'm Risav Sarkar, from Kolkata, India. I'm a second year
                   student pursuing B.Tech in Computer Science Engineering. I
@@ -155,10 +160,10 @@
           </div>
           <div class="cards">
             <div class="card">
-              <div class="cardImage">
+              <div class="cardImage card_animation">
                 <img src="img/moviesxCover.png" />
               </div>
-              <div class="cardText">
+              <div class="cardText card_animation">
                 <h2>MoviesX</h2>
                 <a
                   href="./projects/moviesx.html"
@@ -171,10 +176,10 @@
             </div>
 
             <div class="card">
-              <div class="cardImage">
+              <div class="cardImage card_animation">
                 <img src="img/finwalletCover.svg" />
               </div>
-              <div class="cardText">
+              <div class="cardText card_animation">
                 <h2>FinWallet</h2>
                 <a
                   href="./projects/finwallet.html"
@@ -198,14 +203,14 @@
             <div class="pill"></div>
           </div>
           <div class="timeline">
-            <div class="timeline-container primary">
+            <div class="timeline-container">
               <div class="timeline-icon">
                 <i class="fas fa-school"></i>
               </div>
-              <div class="timelineBody">
+              <div class="timelineBody timelineBody_animation">
                 <div class="timeline-title">
-                  <p>Calcutta Public School</p>
-                  <p class="date">∞-2020</p>
+                  <p class="timeline-title-header">Calcutta Public School</p>
+                  <p class="date">∞ - 2020</p>
                 </div>
                 <p class="timeline-text">
                   Completed my schooling and gave the ICSE exam in 2018 and ISC
@@ -214,14 +219,16 @@
               </div>
             </div>
 
-            <div class="timeline-container primary">
+            <div class="timeline-container">
               <div class="timeline-icon">
                 <i class="fas fa-graduation-cap"></i>
               </div>
-              <div class="timelineBody">
+              <div class="timelineBody timelineBody_animation">
                 <div class="timeline-title">
-                  <p>B.P. Poddar Institute Of Management And Technology</p>
-                  <p class="date">2020-2024</p>
+                  <p class="timeline-title-header">
+                    B.P. Poddar Institute Of Management And Technology
+                  </p>
+                  <p class="date">2020 - 2024</p>
                 </div>
                 <p class="timeline-text">
                   Pursuing B.tech in Computer Science Engineering from B.P.
@@ -292,22 +299,22 @@
         <h9><i class="far fa-copyright"></i> 2021</h9>
       </div>
       <ul>
-        <li>
+        <li class="footerIcons">
           <a href="https://github.com/risav-sarkar" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
         </li>
-        <li>
+        <li class="footerIcons">
           <a href="https://twitter.com/SarkarRisav" target="_blank"
             ><i class="fab fa-twitter" aria-hidden="true"></i
           ></a>
         </li>
-        <li>
+        <li class="footerIcons">
           <a href="https://linkedin.com/in/risavsarkar" target="_blank"
             ><i class="fab fa-linkedin" aria-hidden="true"></i
           ></a>
         </li>
-        <li>
+        <li class="footerIcons">
           <a
             href="https://www.instagram.com/transitionprototype/"
             target="_blank"
@@ -319,6 +326,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

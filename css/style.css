@@ -39,9 +39,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #cfcfcf;
+  background-color: #e6e6e6;
   border-radius: 25px;
   border: 3px solid #050505;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -86,7 +88,7 @@ p {
 
 .sectionTitleBar {
   font-weight: 700;
-  color: #f0f0f0;
+  color: #e6e6e6;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +113,7 @@ p {
   margin: 5px 0;
   width: 100px;
   height: 10px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
 }
 
@@ -142,7 +144,7 @@ p {
   margin-top: 5px;
   width: 100%;
   height: 5px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
   opacity: 0%;
   -webkit-transition: all 0.2s;
@@ -159,7 +161,7 @@ p {
   display: grid;
   place-items: center;
   height: 100vh;
-  color: #f0f0f0;
+  color: #e6e6e6;
   text-align: left;
 }
 
@@ -188,24 +190,24 @@ p {
 .hero-section-container .heroSection .pill {
   height: 10px;
   width: 100px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
   margin: 30px 0;
 }
 
 .aboutme-container {
-  background-color: #f0f0f0;
-  padding: 120px 0;
+  background-color: #e6e6e6;
   color: #072142;
 }
 
 .aboutme-container .aboutmeSection {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 100px 20px;
   display: -ms-grid;
   display: grid;
   grid-gap: 100px;
+  overflow: hidden;
 }
 
 .aboutme-container .aboutmeSection .title {
@@ -263,14 +265,14 @@ p {
   margin-top: 20px;
   margin-right: 10px;
   border: 3px solid #072142;
-  -webkit-box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
-          box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 43, 0.6);
+          box-shadow: 3px 5px 20px rgba(0, 0, 43, 0.6);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .aboutme-container .aboutmeSection .heroSection .btn1 {
-  color: #f0f0f0;
+  color: #e6e6e6;
   background-color: #072142;
 }
 
@@ -283,7 +285,7 @@ p {
 
 .aboutme-container .aboutmeSection .heroSection .btn2 {
   color: #072142;
-  background-color: #f0f0f0;
+  background-color: transparent;
 }
 
 .aboutme-container .aboutmeSection .heroSection .btn2:hover {
@@ -291,7 +293,7 @@ p {
           box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
   border: 3px solid #163d70;
   background-color: #163d70;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 @media (max-width: 900px) {
@@ -345,7 +347,7 @@ p {
   margin-top: 5px;
   height: 20px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
           box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
@@ -447,7 +449,7 @@ p {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 .project-body-container .cards .card .cardImage {
@@ -459,7 +461,7 @@ p {
           justify-content: center;
   height: 250px;
   width: 350px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
 }
 
@@ -475,7 +477,7 @@ p {
 .project-body-container .cards .card .cardText button {
   margin-top: 10px;
   padding: 12px 24px;
-  color: #f0f0f0;
+  color: #e6e6e6;
   font-size: 20px;
   letter-spacing: 2px;
   border: none;
@@ -483,8 +485,8 @@ p {
   border-radius: 50px;
   background-color: #ff4d5a;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(53, 53, 53, 0.4);
-          box-shadow: 0 5px 15px 0 rgba(53, 53, 53, 0.4);
+  -webkit-box-shadow: 3px 5px 50px rgba(85, 85, 85, 0.4);
+          box-shadow: 3px 5px 50px rgba(85, 85, 85, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -503,27 +505,35 @@ p {
 }
 
 .timeline-body-container {
-  padding: 50px 0px 50px 0px;
+  background-color: #e6e6e6;
 }
 
 .timeline-body-container .timeline-body {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1500px;
+  border-radius: 20px;
   margin: 0 auto;
-  padding: 0px 20px 50px 20px;
+  padding: 0px 20px 100px 20px;
 }
 
-@media (max-width: 850px) {
-  .timeline-body-container .timeline-body {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    gap: 0px;
-  }
+.timeline-body-container .timeline-body .sectionTitleBar {
+  color: #072142;
+}
+
+.timeline-body-container .timeline-body .sectionTitleBar .pill {
+  background-color: #072142;
 }
 
 .timeline-body-container .timeline {
@@ -531,7 +541,7 @@ p {
   position: relative;
   padding-left: 4rem;
   margin: 0 0 0 30px;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 .timeline-body-container .timeline:before {
@@ -558,10 +568,9 @@ p {
   border-radius: 50%;
   text-align: center;
   font-size: 25px;
-  background: -webkit-gradient(linear, right top, left top, from(#0575e6), to(#021b79));
-  background: linear-gradient(to left, #0575e6, #021b79);
-  -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
-          box-shadow: 0 2px 15px 0 #0c0c0c;
+  background-color: #072142;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
 }
 
 .timeline-body-container .timeline .timeline-container .timeline-icon i {
@@ -576,8 +585,8 @@ p {
   background-color: #2a2e3d;
   border-radius: 25px;
   padding: 25px;
-  -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
-          box-shadow: 0 2px 15px 0 #0c0c0c;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody:before {
@@ -595,12 +604,16 @@ p {
 
 .timeline-body-container .timeline .timeline-container .timelineBody .timeline-title {
   margin-bottom: 20px;
-  font-size: 2em;
+}
+
+.timeline-body-container .timeline .timeline-container .timelineBody .timeline-title .timeline-title-header {
+  font-size: 30px;
+  letter-spacing: 2px;
   font-weight: 600;
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody .timeline-title .date {
-  font-size: 0.6em;
+  font-size: 16px;
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody .timeline-text {
@@ -621,7 +634,7 @@ p {
   border-radius: 20px;
   margin: 0 auto;
   background-color: #2a2e3d;
-  color: #f0f0f0;
+  color: #e6e6e6;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
   background-image: url(../img/svg3.svg);
@@ -707,7 +720,7 @@ p {
   padding: 30px;
   border: none;
   font-size: 1.2rem;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   color: black;
   outline: none;
   border-radius: 25px;
@@ -752,7 +765,7 @@ p {
   width: 120px;
   height: 36px;
   border-radius: 25px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border: none;
   outline: none;
   color: black;
@@ -884,13 +897,13 @@ p {
 }
 
 .footer .footerText {
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 .footer .footerLine {
   height: 5px;
   width: 100px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -966,7 +979,7 @@ p {
 
 .floaterHeader {
   position: absolute;
-  color: #f0f0f0;
+  color: #e6e6e6;
   top: 120px;
   left: 50px;
 }
@@ -1011,7 +1024,7 @@ p {
   display: grid;
   place-items: center;
   padding-left: 100px;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }
 
 .projectHeader .headerBanner .textBanner div {
@@ -1041,12 +1054,12 @@ p {
 }
 
 .projectHeader .headerBanner .textBanner div .btnContainer button {
-  color: #f0f0f0;
+  color: #e6e6e6;
   border: none;
   outline: none;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(53, 53, 53, 0.4);
-          box-shadow: 0 5px 15px 0 rgba(53, 53, 53, 0.4);
+  -webkit-box-shadow: 0 5px 15px 0 rgba(85, 85, 85, 0.4);
+          box-shadow: 0 5px 15px 0 rgba(85, 85, 85, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1190,7 +1203,7 @@ p {
 
 .websiteImage {
   padding: 100px 0;
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
 }
 
 .websiteImage .title {
@@ -1277,5 +1290,5 @@ p {
 
 .websiteImage .backBtn button:hover {
   background-color: #072142;
-  color: #f0f0f0;
+  color: #e6e6e6;
 }

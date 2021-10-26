@@ -3,12 +3,12 @@ $blue_light: #0575e6;
 $blue_dark: #021b79;
 $grey_light: #2a2e3d;
 $grey_dark: #121217;
-$white: rgb(240, 240, 240);
+$white: rgb(230, 230, 230);
 $white2: #f2f4f5;
 $font_blue: #072142;
 $font_darkBlue: #020b16;
-$shadow_light: rgba(5, 25, 51, 0.4);
-$shadow_dark: rgba(53, 53, 53, 0.4);
+$shadow_light: rgba(0, 0, 43, 0.6);
+$shadow_dark: rgba(85, 85, 85, 0.4);
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
@@ -46,12 +46,13 @@ body::-webkit-scrollbar-track {
   background: hsl(0, 0%, 2%);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(207, 207, 207);
+  background-color: $white;
   border-radius: 25px;
   border: 3px solid hsl(0, 0%, 2%);
-}
-body::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 60%);
+  transition: 3s;
+  &:hover {
+    background: hsl(0, 0%, 60%);
+  }
 }
 a {
   color: #ffffff;
@@ -182,15 +183,15 @@ p {
 
 .aboutme-container {
   background-color: $white;
-  padding: 120px 0;
   color: $font_blue;
 
   .aboutmeSection {
     max-width: $container-width;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 100px 20px;
     display: grid;
     grid-gap: 100px;
+    overflow: hidden;
 
     .title {
       display: flex;
@@ -218,7 +219,7 @@ p {
         height: 300px;
         object-fit: cover;
         border-radius: 50%;
-        box-shadow: 0px 0px 50px 1px rgba(0, 0, 43, 0.6);
+        box-shadow: 0px 0px 50px 1px $shadow_light;
       }
       p {
         font-size: 20px;
@@ -235,7 +236,7 @@ p {
         margin-top: 20px;
         margin-right: 10px;
         border: 3px solid $font_blue;
-        box-shadow: 2px 5px 25px rgba(0, 0, 43, 0.5);
+        box-shadow: 3px 5px 20px $shadow_light;
         transition: 0.3s;
       }
 
@@ -251,7 +252,7 @@ p {
 
       .btn2 {
         color: $font_blue;
-        background-color: $white;
+        background-color: transparent;
         &:hover {
           box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
           border: 3px solid #163d70;
@@ -430,7 +431,7 @@ p {
           border-radius: 50px;
           background-color: #ff4d5a;
           cursor: pointer;
-          box-shadow: 0 5px 15px 0 $shadow_dark;
+          box-shadow: 3px 5px 50px $shadow_dark;
           transition: 0.3s;
 
           &:hover {
@@ -455,20 +456,22 @@ p {
 }
 
 .timeline-body-container {
-  padding: 50px 0px 50px 0px;
+  background-color: $white;
   .timeline-body {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: $container-width;
+    border-radius: 20px;
     margin: 0 auto;
-    padding: 0px 20px 50px 20px;
-  }
-  @media (max-width: 850px) {
-    .timeline-body {
-      grid-template-columns: 1fr;
-      gap: 0px;
+    padding: 0px 20px 100px 20px;
+
+    .sectionTitleBar {
+      color: $font_blue;
+      .pill {
+        background-color: $font_blue;
+      }
     }
   }
   .timeline {
@@ -498,8 +501,8 @@ p {
         border-radius: 50%;
         text-align: center;
         font-size: 25px;
-        background: linear-gradient(to left, $blue_light, $blue_dark);
-        box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+        background-color: $font_blue;
+        box-shadow: 0px 0px 50px $shadow_light;
         i {
           position: absolute;
           left: 50%;
@@ -511,7 +514,7 @@ p {
         background-color: $grey_light;
         border-radius: 25px;
         padding: 25px;
-        box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+        box-shadow: 0px 0px 50px $shadow_light;
         &:before {
           content: "";
           background: inherit;
@@ -525,10 +528,13 @@ p {
         }
         .timeline-title {
           margin-bottom: 20px;
-          font-size: 2em;
-          font-weight: 600;
+          .timeline-title-header {
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 600;
+          }
           .date {
-            font-size: 0.6em;
+            font-size: 16px;
           }
         }
         .timeline-text {

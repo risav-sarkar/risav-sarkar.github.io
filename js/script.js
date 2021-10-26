@@ -38,3 +38,20 @@ function saveForm(name, email, message) {
   let newContactRef = contactRef.push();
   newContactRef.set({ name: name, email: email, message: message });
 }
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "50px",
+  duration: 1500,
+  delay: 200,
+  // reset: true
+});
+
+sr.reveal(
+  `.hero-section-container, .title, .sectionTitleBar, .cards, .timeline, .contact-body-container, .footerIcons, .floaterHeader`
+);
+sr.reveal(`.skills, .card_animation, .timelineBody_animation`, {
+  interval: 100,
+});
+sr.reveal(`.heroImage`, { origin: "left" });
+sr.reveal(`.heroText, .styled-input`, { origin: "right" });
