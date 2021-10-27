@@ -569,8 +569,8 @@ p {
   text-align: center;
   font-size: 25px;
   background-color: #072142;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
-          box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
 }
 
 .timeline-body-container .timeline .timeline-container .timeline-icon i {
@@ -585,8 +585,8 @@ p {
   background-color: #2a2e3d;
   border-radius: 25px;
   padding: 25px;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
-          box-shadow: 0px 0px 50px rgba(0, 0, 43, 0.6);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody:before {
@@ -637,10 +637,6 @@ p {
   color: #e6e6e6;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
-  background-image: url(../img/svg3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
 }
 
 .contact-form-container .sectionTitleBar {
@@ -1249,6 +1245,8 @@ p {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
+          box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
 }
 
 @media (max-width: 800px) {
@@ -1286,6 +1284,8 @@ p {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-box-shadow: 3px 5px 30px rgba(0, 0, 43, 0.6);
+          box-shadow: 3px 5px 30px rgba(0, 0, 43, 0.6);
 }
 
 .websiteImage .backBtn button:hover {
