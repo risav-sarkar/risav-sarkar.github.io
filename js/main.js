@@ -1,3 +1,5 @@
+var rellax = new Rellax(".parallax");
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
@@ -7,10 +9,10 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.heroSection, .title, .sectionTitleBar, .cards, .timeline, .contact-body-container, .floaterHeader, .imageBannerAnimation, .projectImageAnimation, .projectAnimation, .backBtn`
+  `.home__title, .title, .sectionTitleBar, .cards, .timeline, .contact-body-container, .floaterHeader, .imageBannerAnimation, .projectImageAnimation, .projectAnimation, .backBtn`
 );
 sr.reveal(
-  `.skills, .card_animation, .timelineBody_animation, .styled-input, .textBannerAnimation, .techLogosAnimation, .websiteImageAnimation`,
+  `.links, .skills, .card_animation, .timelineBody_animation, .styled-input, .textBannerAnimation, .techLogosAnimation, .websiteImageAnimation`,
   {
     interval: 100,
   }

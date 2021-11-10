@@ -16,17 +16,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Nunito", sans-serif;
-  background-image: url(../img/wrapped.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-  background-color: $font_darkBlue;
-}
-@media (max-width: 830px) {
-  body {
-    background-position: top;
-    background-size: 150%;
-  }
+  background-color: #fedcc8;
 }
 
 html {
@@ -112,72 +102,114 @@ p {
   border-radius: 20px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 20px;
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  a {
-    margin: 0 10px;
-    font-size: 20px;
-    position: relative;
-    display: block;
-  }
-  .pillUnderline {
-    margin-top: 5px;
-    width: 100%;
-    height: 5px;
-    background-color: $white;
-    border-radius: 20px;
-    opacity: 0%;
-    transition: all 0.2s;
-    position: absolute;
-  }
-  a:hover {
-    .pillUnderline {
-      opacity: 100%;
-    }
-  }
-}
-
-.hero-section-container {
-  display: grid;
-  place-items: center;
+.home {
   height: 100vh;
-  color: $white;
-  text-align: left;
+  overflow: hidden;
+  position: relative;
+  background-color: #fedcc8;
 
-  .heroSection {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding: 20px;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
 
-    h1 {
-      line-height: 95px;
-      font-size: 100px;
-      letter-spacing: 8px;
+    a {
+      margin: 0 10px;
+      font-size: 20px;
+      position: relative;
+      display: block;
+      color: $font_blue;
+      font-weight: 600;
     }
-
-    p {
-      font-size: 30px;
+    .pillUnderline {
+      margin-top: 5px;
+      width: 100%;
+      height: 5px;
+      background-color: $font_blue;
+      border-radius: 20px;
+      opacity: 0%;
+      transition: all 0.2s;
+      position: absolute;
     }
-
-    @media (max-width: 500px) {
-      h1 {
-        line-height: 75px;
-        font-size: 80px;
-        letter-spacing: 4px;
+    a:hover {
+      .pillUnderline {
+        opacity: 100%;
       }
     }
+  }
 
-    .pill {
-      height: 10px;
-      width: 100px;
-      background-color: $white;
-      border-radius: 20px;
-      margin: 30px 0;
+  &__parallax {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-img1 {
+      background-image: url("../img/layer_0.png");
+      z-index: 1;
     }
+    &-img2 {
+      background-image: url("../img/layer_1.png");
+      z-index: 2;
+    }
+    &-img3 {
+      background-image: url("../img/layer_2.png");
+      z-index: 3;
+    }
+    &-img4 {
+      background-image: url("../img/layer_3.png");
+      z-index: 4;
+    }
+    &-img5 {
+      background-image: url("../img/layer_4.png");
+      z-index: 5;
+    }
+    &-img6 {
+      background-image: url("../img/layer_5.png");
+      z-index: 6;
+    }
+    &-img7 {
+      background-image: url("../img/layer_6.png");
+      z-index: 7;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    padding: 0 20px;
+    top: 40%;
+    font-size: 100px;
+    line-height: 90px;
+    z-index: 4;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 80px;
+      line-height: 90px;
+    }
+  }
+
+  .blur {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40%;
+    background: linear-gradient(to top, #000000, #ffffff00);
+    z-index: 1000;
   }
 }
 
@@ -546,7 +578,8 @@ p {
 }
 
 .contact-form-container {
-  padding: 50px 20px 150px 20px;
+  padding: 150px 20px 150px 20px;
+  background-color: $font_darkBlue;
   .contact-body-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
