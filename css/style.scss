@@ -1,8 +1,5 @@
 $container-width: 1500px;
-$blue_light: #0575e6;
-$blue_dark: #021b79;
-$grey_light: #2a2e3d;
-$grey_dark: #121217;
+
 $white: rgb(230, 230, 230);
 $white2: #f2f4f5;
 $font_blue: #072142;
@@ -214,13 +211,13 @@ p {
 }
 
 .aboutme-container {
-  background-color: $white;
-  color: $font_blue;
+  background-color: $font_darkBlue;
+  color: $white;
 
   .aboutmeSection {
     max-width: $container-width;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 180px 20px 100px 20px;
     display: grid;
     grid-gap: 100px;
     overflow: hidden;
@@ -283,7 +280,7 @@ p {
       }
 
       .btn2 {
-        color: $font_blue;
+        color: $white;
         background-color: transparent;
         &:hover {
           box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
@@ -340,7 +337,7 @@ p {
               width: 60%;
               height: 100%;
               border-radius: 20px;
-              left: 0;
+              left: -1px;
               background-image: linear-gradient(
                 to right,
                 #072142,
@@ -354,7 +351,7 @@ p {
               width: 70%;
               height: 100%;
               border-radius: 20px;
-              left: 0;
+              left: -1px;
               background-image: linear-gradient(
                 to right,
                 #072142,
@@ -368,7 +365,7 @@ p {
               width: 80%;
               height: 100%;
               border-radius: 20px;
-              left: 0;
+              left: -1px;
               background-image: linear-gradient(
                 to right,
                 #072142,
@@ -382,7 +379,7 @@ p {
               width: 90%;
               height: 100%;
               border-radius: 20px;
-              left: 0;
+              left: -1px;
               background-image: linear-gradient(
                 to right,
                 #072142,
@@ -399,6 +396,11 @@ p {
       .skillsSection {
         grid-template-columns: 1fr;
       }
+    }
+  }
+  @media (max-width: 700px) {
+    .aboutmeSection {
+      padding-top: 100px;
     }
   }
 }
@@ -519,7 +521,7 @@ p {
       top: 5px;
       width: 4px;
       height: 100%;
-      background-color: $grey_light;
+      background-color: $font_darkBlue;
     }
     .timeline-container {
       position: relative;
@@ -543,7 +545,7 @@ p {
         }
       }
       .timelineBody {
-        background-color: $grey_light;
+        background-color: $font_darkBlue;
         border-radius: 25px;
         padding: 25px;
         box-shadow: 0px 0px 30px $shadow_light;
@@ -587,7 +589,7 @@ p {
     max-width: 1000px;
     border-radius: 20px;
     margin: 0 auto;
-    background-color: $grey_light;
+    background-color: $font_darkBlue;
     color: $white;
     box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
   }

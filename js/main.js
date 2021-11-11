@@ -1,5 +1,3 @@
-var rellax = new Rellax(".parallax");
-
 const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
@@ -19,3 +17,5 @@ sr.reveal(
 );
 sr.reveal(`.heroImage`, { origin: "left" });
 sr.reveal(`.heroText`, { origin: "right" });
+
+var rellax = new Rellax(".parallax");

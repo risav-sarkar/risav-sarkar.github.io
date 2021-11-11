@@ -236,14 +236,14 @@ p {
 }
 
 .aboutme-container {
-  background-color: #e6e6e6;
-  color: #072142;
+  background-color: #020b16;
+  color: #e6e6e6;
 }
 
 .aboutme-container .aboutmeSection {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 180px 20px 100px 20px;
   display: -ms-grid;
   display: grid;
   grid-gap: 100px;
@@ -324,7 +324,7 @@ p {
 }
 
 .aboutme-container .aboutmeSection .heroSection .btn2 {
-  color: #072142;
+  color: #e6e6e6;
   background-color: transparent;
 }
 
@@ -399,7 +399,7 @@ p {
   width: 60%;
   height: 100%;
   border-radius: 20px;
-  left: 0;
+  left: -1px;
   background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
@@ -409,7 +409,7 @@ p {
   width: 70%;
   height: 100%;
   border-radius: 20px;
-  left: 0;
+  left: -1px;
   background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
@@ -419,7 +419,7 @@ p {
   width: 80%;
   height: 100%;
   border-radius: 20px;
-  left: 0;
+  left: -1px;
   background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
@@ -429,7 +429,7 @@ p {
   width: 90%;
   height: 100%;
   border-radius: 20px;
-  left: 0;
+  left: -1px;
   background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(#8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a, #ff4d5a);
 }
@@ -438,6 +438,12 @@ p {
   .aboutme-container .aboutmeSection .skillsSection {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutme-container .aboutmeSection {
+    padding-top: 100px;
   }
 }
 
@@ -591,7 +597,7 @@ p {
   top: 5px;
   width: 4px;
   height: 100%;
-  background-color: #2a2e3d;
+  background-color: #020b16;
 }
 
 .timeline-body-container .timeline .timeline-container {
@@ -622,7 +628,7 @@ p {
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody {
-  background-color: #2a2e3d;
+  background-color: #020b16;
   border-radius: 25px;
   padding: 25px;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
@@ -674,7 +680,7 @@ p {
   max-width: 1000px;
   border-radius: 20px;
   margin: 0 auto;
-  background-color: #2a2e3d;
+  background-color: #020b16;
   color: #e6e6e6;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
