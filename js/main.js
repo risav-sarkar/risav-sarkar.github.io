@@ -9,7 +9,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__title, .title, .sectionTitleBar, .cards, .timeline, .contact-body-container, .floaterHeader, .imageBannerAnimation, .projectImageAnimation, .projectAnimation, .backBtn`
+  ` .title, .sectionTitleBar, .cards, .timeline, .contact-body-container, .floaterHeader, .imageBannerAnimation, .projectImageAnimation, .projectAnimation, .backBtn`
 );
 sr.reveal(
   `.links, .skills, .card_animation, .timelineBody_animation, .styled-input, .textBannerAnimation, .techLogosAnimation, .websiteImageAnimation`,

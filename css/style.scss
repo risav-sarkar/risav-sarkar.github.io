@@ -188,8 +188,7 @@ p {
     display: flex;
     justify-content: center;
     color: $white;
-    padding: 0 20px;
-    top: 40%;
+    top: 40vh;
     font-size: 100px;
     line-height: 90px;
     z-index: 4;
@@ -200,6 +199,7 @@ p {
     &__title {
       font-size: 80px;
       line-height: 90px;
+      top: 35vh;
     }
   }
 
@@ -208,7 +208,7 @@ p {
     width: 100%;
     bottom: 0;
     height: 40%;
-    background: linear-gradient(to top, #000000, #ffffff00);
+    background: linear-gradient(to top, $font_darkBlue, #ffffff00);
     z-index: 1000;
   }
 }

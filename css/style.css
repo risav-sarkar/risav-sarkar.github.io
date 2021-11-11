@@ -210,8 +210,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   color: #e6e6e6;
-  padding: 0 20px;
-  top: 40%;
+  top: 40vh;
   font-size: 100px;
   line-height: 90px;
   z-index: 4;
@@ -222,6 +221,7 @@ p {
   .home__title {
     font-size: 80px;
     line-height: 90px;
+    top: 35vh;
   }
 }
 
@@ -230,8 +230,8 @@ p {
   width: 100%;
   bottom: 0;
   height: 40%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff00));
-  background: linear-gradient(to top, #000000, #ffffff00);
+  background: -webkit-gradient(linear, left bottom, left top, from(#020b16), to(#ffffff00));
+  background: linear-gradient(to top, #020b16, #ffffff00);
   z-index: 1000;
 }
 
