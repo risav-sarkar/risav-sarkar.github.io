@@ -406,7 +406,7 @@ p {
 }
 
 .project-body-container {
-  background-color: $font_darkBlue;
+  background-color: $white;
 
   .project-body {
     display: flex;
@@ -420,7 +420,11 @@ p {
   }
 
   .sectionTitleBar {
-    align-self: flex-start;
+    color: $font_blue;
+
+    .pill {
+      background-color: $font_blue;
+    }
   }
 
   .cards {
@@ -442,7 +446,7 @@ p {
         justify-content: center;
         height: 250px;
         width: 350px;
-        background-color: $white;
+        background-color: $font_darkBlue;
         border-radius: 20px;
 
         img {
@@ -453,6 +457,7 @@ p {
 
       .cardText {
         letter-spacing: 2px;
+        color: $font_blue;
 
         button {
           margin-top: 10px;
@@ -490,7 +495,8 @@ p {
 }
 
 .timeline-body-container {
-  background-color: $white;
+  background-color: $font_darkBlue;
+
   .timeline-body {
     display: flex;
     align-items: center;
@@ -500,13 +506,6 @@ p {
     border-radius: 20px;
     margin: 0 auto;
     padding: 0px 20px 100px 20px;
-
-    .sectionTitleBar {
-      color: $font_blue;
-      .pill {
-        background-color: $font_blue;
-      }
-    }
   }
   .timeline {
     max-width: 700px;
@@ -521,7 +520,7 @@ p {
       top: 5px;
       width: 4px;
       height: 100%;
-      background-color: $font_darkBlue;
+      background-color: $white;
     }
     .timeline-container {
       position: relative;
@@ -535,7 +534,8 @@ p {
         border-radius: 50%;
         text-align: center;
         font-size: 25px;
-        background-color: $font_blue;
+        background-color: $white;
+        color: $font_blue;
         box-shadow: 0px 0px 30px $shadow_light;
         i {
           position: absolute;
@@ -545,8 +545,9 @@ p {
         }
       }
       .timelineBody {
-        background-color: $font_darkBlue;
-        border-radius: 25px;
+        background-color: $white;
+        color: $font_blue;
+        border-radius: 20px;
         padding: 25px;
         box-shadow: 0px 0px 30px $shadow_light;
         &:before {
@@ -581,21 +582,26 @@ p {
 
 .contact-form-container {
   padding: 150px 20px 150px 20px;
-  background-color: $font_darkBlue;
+  background-color: $white;
+
   .contact-body-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     max-width: 1000px;
-    border-radius: 20px;
     margin: 0 auto;
-    background-color: $font_darkBlue;
-    color: $white;
-    box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+    color: $font_blue;
   }
+
   .sectionTitleBar {
+    color: $font_blue;
     padding: 20px 0px 40px 0px;
+
+    .pill {
+      background-color: $font_blue;
+    }
   }
+
   .contact-text {
     padding: 0px 20px 20px 20px;
     text-align: center;
@@ -615,21 +621,24 @@ p {
       padding-bottom: 50px;
     }
   }
+
   .input-container {
     position: relative;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     max-width: 500px;
-    background: linear-gradient(to right, #00163f, #004e92);
+    background-color: $font_blue;
     box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
     padding: 1.5rem;
   }
+
   .styled-input {
     margin: 0 0 1rem 0;
     position: relative;
     display: flex;
   }
+
   .styled-input label {
     color: rgb(0, 0, 0);
     padding: 1.2rem 0px 1rem 30px;
@@ -642,6 +651,7 @@ p {
     font-size: 1.1rem;
     font-weight: 600;
   }
+
   input:focus ~ label,
   textarea:focus ~ label,
   input:valid ~ label,
@@ -652,6 +662,7 @@ p {
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
   }
+
   input,
   textarea {
     padding: 30px;
@@ -660,14 +671,16 @@ p {
     background-color: $white;
     color: rgb(0, 0, 0);
     outline: none;
-    border-radius: 25px;
+    border-radius: 20px;
     width: 100%;
     box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
   }
+
   textarea {
     min-height: 10em;
     width: 100%;
   }
+
   .contactButton {
     margin: 0 auto;
     text-align: center;
@@ -683,6 +696,7 @@ p {
     align-items: center;
     flex-direction: column;
   }
+
   .submitbutton {
     position: relative;
     display: block;
@@ -704,6 +718,7 @@ p {
       transition: all 0.1s ease-in-out;
     }
   }
+
   .loader {
     display: flex;
     justify-content: center;
@@ -717,6 +732,7 @@ p {
     border-radius: 50%;
     opacity: 0;
   }
+
   .check {
     width: 100%;
     height: 100%;
@@ -729,10 +745,12 @@ p {
     color: white;
     font-size: 1em;
   }
+
   .loader.active {
     animation: loading 2s ease-in-out;
     animation-fill-mode: forwards;
   }
+
   .check.active {
     opacity: 1;
     transform: translate3d(1px, 0, 0);
@@ -754,6 +772,11 @@ p {
       transform: rotate(1080deg);
       border-color: #1c89ff;
     }
+  }
+}
+@media (max-width: 700px) {
+  .contact-form-container {
+    padding-top: 0px;
   }
 }
 

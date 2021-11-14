@@ -448,7 +448,7 @@ p {
 }
 
 .project-body-container {
-  background-color: #020b16;
+  background-color: #e6e6e6;
 }
 
 .project-body-container .project-body {
@@ -472,8 +472,11 @@ p {
 }
 
 .project-body-container .sectionTitleBar {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  color: #072142;
+}
+
+.project-body-container .sectionTitleBar .pill {
+  background-color: #072142;
 }
 
 .project-body-container .cards {
@@ -507,7 +510,7 @@ p {
           justify-content: center;
   height: 250px;
   width: 350px;
-  background-color: #e6e6e6;
+  background-color: #020b16;
   border-radius: 20px;
 }
 
@@ -518,6 +521,7 @@ p {
 
 .project-body-container .cards .card .cardText {
   letter-spacing: 2px;
+  color: #072142;
 }
 
 .project-body-container .cards .card .cardText button {
@@ -551,7 +555,7 @@ p {
 }
 
 .timeline-body-container {
-  background-color: #e6e6e6;
+  background-color: #020b16;
 }
 
 .timeline-body-container .timeline-body {
@@ -574,14 +578,6 @@ p {
   padding: 0px 20px 100px 20px;
 }
 
-.timeline-body-container .timeline-body .sectionTitleBar {
-  color: #072142;
-}
-
-.timeline-body-container .timeline-body .sectionTitleBar .pill {
-  background-color: #072142;
-}
-
 .timeline-body-container .timeline {
   max-width: 700px;
   position: relative;
@@ -597,7 +593,7 @@ p {
   top: 5px;
   width: 4px;
   height: 100%;
-  background-color: #020b16;
+  background-color: #e6e6e6;
 }
 
 .timeline-body-container .timeline .timeline-container {
@@ -614,7 +610,8 @@ p {
   border-radius: 50%;
   text-align: center;
   font-size: 25px;
-  background-color: #072142;
+  background-color: #e6e6e6;
+  color: #072142;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
           box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
 }
@@ -628,8 +625,9 @@ p {
 }
 
 .timeline-body-container .timeline .timeline-container .timelineBody {
-  background-color: #020b16;
-  border-radius: 25px;
+  background-color: #e6e6e6;
+  color: #072142;
+  border-radius: 20px;
   padding: 25px;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
           box-shadow: 0px 0px 30px rgba(0, 0, 43, 0.6);
@@ -668,7 +666,7 @@ p {
 
 .contact-form-container {
   padding: 150px 20px 150px 20px;
-  background-color: #020b16;
+  background-color: #e6e6e6;
 }
 
 .contact-form-container .contact-body-container {
@@ -678,16 +676,17 @@ p {
       grid-template-columns: 1fr 1fr;
   place-items: center;
   max-width: 1000px;
-  border-radius: 20px;
   margin: 0 auto;
-  background-color: #020b16;
-  color: #e6e6e6;
-  -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
-          box-shadow: 0 2px 15px 0 #0c0c0c;
+  color: #072142;
 }
 
 .contact-form-container .sectionTitleBar {
+  color: #072142;
   padding: 20px 0px 40px 0px;
+}
+
+.contact-form-container .sectionTitleBar .pill {
+  background-color: #072142;
 }
 
 .contact-form-container .contact-text {
@@ -717,10 +716,9 @@ p {
   position: relative;
   height: 100%;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   max-width: 500px;
-  background: -webkit-gradient(linear, left top, right top, from(#00163f), to(#004e92));
-  background: linear-gradient(to right, #00163f, #004e92);
+  background-color: #072142;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
   padding: 1.5rem;
@@ -766,7 +764,7 @@ p {
   background-color: #e6e6e6;
   color: black;
   outline: none;
-  border-radius: 25px;
+  border-radius: 20px;
   width: 100%;
   -webkit-box-shadow: 0 2px 15px 0 #0c0c0c;
           box-shadow: 0 2px 15px 0 #0c0c0c;
@@ -922,6 +920,12 @@ p {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
     border-color: #1c89ff;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-form-container {
+    padding-top: 0px;
   }
 }
 
