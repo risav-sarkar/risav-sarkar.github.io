@@ -243,7 +243,7 @@ p {
 .aboutme-container .aboutmeSection {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 180px 20px 100px 20px;
+  padding: 150px 20px;
   display: -ms-grid;
   display: grid;
   grid-gap: 100px;
@@ -443,7 +443,7 @@ p {
 
 @media (max-width: 700px) {
   .aboutme-container .aboutmeSection {
-    padding-top: 100px;
+    padding: 100px 20px;
   }
 }
 

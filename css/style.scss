@@ -217,7 +217,7 @@ p {
   .aboutmeSection {
     max-width: $container-width;
     margin: 0 auto;
-    padding: 180px 20px 100px 20px;
+    padding: 150px 20px;
     display: grid;
     grid-gap: 100px;
     overflow: hidden;
@@ -400,7 +400,7 @@ p {
   }
   @media (max-width: 700px) {
     .aboutmeSection {
-      padding-top: 100px;
+      padding: 100px 20px;
     }
   }
 }
