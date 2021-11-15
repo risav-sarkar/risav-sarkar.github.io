@@ -4,8 +4,10 @@ $white: rgb(230, 230, 230);
 $white2: #f2f4f5;
 $font_blue: #072142;
 $font_darkBlue: #020b16;
-$shadow_light: rgba(0, 0, 43, 0.6);
-$shadow_dark: rgba(85, 85, 85, 0.4);
+$shadow_light: rgb(2, 2, 41);
+$shadow_dark: rgba(75, 75, 75, 0.6);
+$accent: #ff4d5a;
+$accent_hover: #c9283e;
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
@@ -229,9 +231,6 @@ p {
       max-width: 1000px;
       padding-bottom: 50px;
       margin: 0 auto;
-      img {
-        height: 3em;
-      }
     }
 
     .heroSection {
@@ -250,11 +249,13 @@ p {
         border-radius: 50%;
         box-shadow: 0px 0px 50px 1px $shadow_light;
       }
+
       p {
         font-size: 20px;
         letter-spacing: 1px;
         max-width: 450px;
       }
+
       button {
         outline: none;
         border-radius: 20px;
@@ -264,18 +265,18 @@ p {
         cursor: pointer;
         margin-top: 20px;
         margin-right: 10px;
-        border: 3px solid $font_blue;
+        border: 3px solid $accent;
         box-shadow: 3px 5px 20px $shadow_light;
         transition: 0.3s;
       }
 
       .btn1 {
         color: $white;
-        background-color: $font_blue;
+        background-color: $accent;
         &:hover {
           box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
-          border: 3px solid #163d70;
-          background-color: #163d70;
+          border: 3px solid $accent_hover;
+          background-color: $accent_hover;
         }
       }
 
@@ -284,8 +285,8 @@ p {
         background-color: transparent;
         &:hover {
           box-shadow: 4px 4px 10px rgba(0, 0, 43, 0.6);
-          border: 3px solid #163d70;
-          background-color: #163d70;
+          border: 3px solid $accent_hover;
+          background-color: $accent_hover;
           color: $white;
         }
       }
@@ -327,9 +328,8 @@ p {
             margin-top: 5px;
             height: 20px;
             width: 100%;
-            background-color: $white;
             border-radius: 20px;
-            box-shadow: 0 5px 15px 0 rgba(5, 25, 51, 0.4);
+            box-shadow: 0 5px 15px 0 rgba(7, 36, 73, 0.521);
             position: relative;
 
             .sixty {
@@ -340,7 +340,7 @@ p {
               left: -1px;
               background-image: linear-gradient(
                 to right,
-                #072142,
+                #000d57,
                 #8c2b7a,
                 #ff4d5a
               );
@@ -354,7 +354,7 @@ p {
               left: -1px;
               background-image: linear-gradient(
                 to right,
-                #072142,
+                #000d57,
                 #8c2b7a,
                 #ff4d5a
               );
@@ -368,7 +368,7 @@ p {
               left: -1px;
               background-image: linear-gradient(
                 to right,
-                #072142,
+                #000d57,
                 #8c2b7a,
                 #ff4d5a
               );
@@ -382,7 +382,7 @@ p {
               left: -1px;
               background-image: linear-gradient(
                 to right,
-                #072142,
+                #000d57,
                 #8c2b7a,
                 #ff4d5a
               );
@@ -448,6 +448,7 @@ p {
         width: 350px;
         background-color: $font_darkBlue;
         border-radius: 20px;
+        box-shadow: 0px 0px 50px 1px $shadow_dark;
 
         img {
           max-width: 100%;
@@ -468,13 +469,13 @@ p {
           border: none;
           outline: none;
           border-radius: 50px;
-          background-color: #ff4d5a;
+          background-color: $accent;
           cursor: pointer;
-          box-shadow: 3px 5px 50px $shadow_dark;
+          box-shadow: 0px 0px 50px 1px $shadow_dark;
           transition: 0.3s;
 
           &:hover {
-            background-color: #fa626c;
+            background-color: $accent_hover;
             box-shadow: none;
           }
         }
@@ -536,7 +537,7 @@ p {
         font-size: 25px;
         background-color: $white;
         color: $font_blue;
-        box-shadow: 0px 0px 30px $shadow_light;
+        box-shadow: 0px 0px 30px 1px$shadow_dark;
         i {
           position: absolute;
           left: 50%;
@@ -549,7 +550,8 @@ p {
         color: $font_blue;
         border-radius: 20px;
         padding: 25px;
-        box-shadow: 0px 0px 30px $shadow_light;
+        box-shadow: 0px 0px 30px 1px$shadow_dark;
+
         &:before {
           content: "";
           background: inherit;
@@ -629,7 +631,7 @@ p {
     border-radius: 20px;
     max-width: 500px;
     background-color: $font_blue;
-    box-shadow: 0 2px 15px 0 rgb(12, 12, 12);
+    box-shadow: 0px 0px 50px 1px $shadow_dark;
     padding: 1.5rem;
   }
 
@@ -710,7 +712,7 @@ p {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 50px 1px $shadow_dark;
     transition: all 0.1s ease-in-out;
     &:hover {
       background-color: rgb(207, 206, 205);
@@ -914,7 +916,7 @@ p {
             border: none;
             outline: none;
             cursor: pointer;
-            box-shadow: 0 5px 15px 0 $shadow_dark;
+            box-shadow: 0px 0px 30px 1px $shadow_dark;
             transition: 0.3s;
           }
 
@@ -1079,7 +1081,7 @@ p {
       width: 100%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0px 0px 30px $shadow_light;
+      box-shadow: 0px 0px 30px 1px $shadow_dark;
     }
   }
 
