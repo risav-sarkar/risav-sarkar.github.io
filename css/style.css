@@ -290,6 +290,7 @@ p {
   font-size: 20px;
   letter-spacing: 1px;
   max-width: 450px;
+  margin-top: 20px;
 }
 
 .aboutme-container .aboutmeSection .heroSection button {
@@ -370,6 +371,11 @@ p {
   gap: 10px;
   max-width: 460px;
   width: 100%;
+}
+
+.aboutme-container .aboutmeSection .skillsSection .skills img {
+  height: 85px;
+  width: 85px;
 }
 
 .aboutme-container .aboutmeSection .skillsSection .skills .skillsDetails {

@@ -255,6 +255,7 @@ p {
         font-size: 20px;
         letter-spacing: 1px;
         max-width: 450px;
+        margin-top: 20px;
       }
 
       button {
@@ -320,6 +321,12 @@ p {
         gap: 10px;
         max-width: 460px;
         width: 100%;
+
+        img {
+          height: 85px;
+          width: 85px;
+        }
+
         .skillsDetails {
           width: 100%;
           h3 {
