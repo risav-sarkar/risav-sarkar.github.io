@@ -42,9 +42,9 @@ skillsDiv.innerHTML = `
 // PROJECTS ------------------------------
 const projects = [
   {
-    name: "Notes",
-    imgsrc: "img/notesCover.png",
-    url: "./projects/notes.html",
+    name: "Medimate",
+    imgsrc: "img/medimate.png",
+    url: "./projects/medimate.html",
   },
   {
     name: "Devcord",
@@ -52,14 +52,14 @@ const projects = [
     url: "./projects/devcord.html",
   },
   {
+    name: "Notes",
+    imgsrc: "img/notesCover.png",
+    url: "./projects/notes.html",
+  },
+  {
     name: "MoviesX",
     imgsrc: "img/moviesxCover.png",
     url: "./projects/moviesx.html",
-  },
-  {
-    name: "FinWallet",
-    imgsrc: "img/finwalletCover.svg",
-    url: "./projects/finwallet.html",
   },
 ];
 
@@ -119,7 +119,7 @@ const timelineElements = [
   },
   {
     name: "PwC India",
-    time: "2024",
+    time: "2024 - Present",
     content: "Risk Consultant - Exploring the world of cybersecurity.",
     icon: "fas fa-briefcase",
   },
